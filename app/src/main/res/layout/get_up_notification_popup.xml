@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="@dimen/dp_50"
+                app:cardElevation="@dimen/dp_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circle_app_icon" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView139"
+                style="@style/normaltxt_20sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Vaccine Buddy New Update"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+            <TextView
+                android:id="@+id/getUpDes"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_upgrade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="@color/darknavyblue"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/card"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/getUpDes">
+
+                <TextView
+                    android:id="@+id/getUpUpgrade"
+                    style="@style/normaltxt_16sp_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="Upgrade"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:layout_constraintBottom_toBottomOf="@+id/card_upgrade"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/card_upgrade"
+                app:layout_constraintTop_toTopOf="@+id/card_upgrade">
+
+                <TextView
+                    android:id="@+id/getAppdialog_cancel"
+                    style="@style/normaltxt_16sp_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="Cancel"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_8"
+        app:cardCornerRadius="@dimen/dp_8"
+        app:cardElevation="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView36"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivdummyimg"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:srcCompat="@drawable/rounded_app_icon" />
+
+            <TextView
+                android:id="@+id/tvNameOrderDetails"
+                style="@style/normaltxt_15spbold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/tvDate_OrderDetails"
+                app:layout_constraintStart_toEndOf="@+id/imageView36"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDesOrderDetails"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="16dp"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvNameOrderDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameOrderDetails" />
+
+            <TextView
+                android:id="@+id/tvPriceOrderDetails"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/tvDesOrderDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesOrderDetails" />
+
+            <TextView
+                android:id="@+id/tvOfferPriceOrderDetails"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceOrderDetails" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:gravity="right"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceOrderDetails" />
+
+            <TextView
+                android:id="@+id/textView120"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="Total :"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTotal"
+                app:layout_constraintEnd_toStartOf="@+id/tvTotal"
+                app:layout_constraintTop_toTopOf="@+id/tvTotal" />
+
+            <TextView
+                android:id="@+id/tvDate_OrderDetails"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNameOrderDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNameOrderDetails" />
+
+            <TextView
+                android:id="@+id/textView123"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Included Vaccines:"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toBottomOf="@+id/imageView36" />
+
+            <TextView
+                android:id="@+id/textView1231"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Included Dosage :"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/imageView36"
+                app:layout_constraintTop_toBottomOf="@+id/imageView36" />
+
+            <TextView
+                android:id="@+id/tvIncludeVaa_OrderDetails"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:gravity="left"
+                android:textColor="@color/pink"
+                app:layout_constraintBottom_toBottomOf="@+id/textView123"
+                app:layout_constraintStart_toEndOf="@+id/textView123"
+                app:layout_constraintTop_toTopOf="@+id/textView123" />
+
+            <TextView
+                android:id="@+id/tvCompleteDoes_OrderDetails"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/pink"
+                app:layout_constraintStart_toStartOf="@+id/textView123"
+                app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+            <TextView
+                android:id="@+id/tvPendingDoes_OrderDetails"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCompleteDoes_OrderDetails"
+                app:layout_constraintEnd_toEndOf="@+id/tvDate_OrderDetails"
+                app:layout_constraintTop_toTopOf="@+id/tvCompleteDoes_OrderDetails" />
+
+            <TextView
+                android:id="@+id/textView187"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_marginBottom="16dp"
+                android:text="Vaccination will be done by :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCompleteDoes_OrderDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompleteDoes_OrderDetails" />
+            <TextView
+                android:id="@+id/textView1871"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:layout_marginBottom="16dp"
+                android:text="Completed By :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCompleteDoes_OrderDetails"
+                app:layout_constraintTop_toBottomOf="@+id/tvCompleteDoes_OrderDetails" />
+
+            <TextView
+                android:id="@+id/tvFor_OrderDetails"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView187"
+                app:layout_constraintStart_toEndOf="@+id/textView1871"
+                app:layout_constraintTop_toTopOf="@+id/textView187" />
+            <TextView
+                android:id="@+id/tvFor1_OrderDetails"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView187"
+                app:layout_constraintStart_toEndOf="@+id/textView187"
+                app:layout_constraintTop_toTopOf="@+id/textView187" />
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintEnd_toEndOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintStart_toStartOf="@+id/tvPriceOrderDetails"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceOrderDetails" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

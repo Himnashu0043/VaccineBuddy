@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.AddressSecond.SecondAddressActivity">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView140"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        style="@style/normaltxt_14sp_Medium"
+        android:text="+ Add New Address"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyAddkid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView140" />
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/const2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="198dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:background="@drawable/common_white_bg"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/const1"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/const1"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/const1">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView582"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_noun_buildings" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1412"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:fontFamily="@font/gilroy_semibold"-->
+<!--            android:text="Riya rawat"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/newcolor"-->
+<!--            android:textSize="@dimen/sp_16"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView582"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1422"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="24dp"-->
+<!--            android:text="Make Default"-->
+<!--            android:fontFamily="@font/gilroy_medium"-->
+<!--            android:textColor="@color/orange"-->
+<!--            android:textSize="@dimen/sp_14"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView1412"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView592"-->
+<!--            android:layout_width="22dp"-->
+<!--            android:layout_height="33dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_delete" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1432"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="26dp"-->
+<!--            android:fontFamily="@font/gilroy_regular"-->
+<!--            android:text="q_farhan@gmail.com \n +1 (555) 229-3367"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_14"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView1412" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1442"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/gilroy_regular"-->
+<!--            android:text="1098 Wapello Street \n Altadena, California 91001 \n United States"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_14"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/textView1432"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView1432" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView63"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/imageView592"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView1422"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_edit_img" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

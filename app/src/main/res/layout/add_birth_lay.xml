@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/prevousView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_16"
+       style="@style/normaltxt_12sp_Regular"
+        android:text="Reaction with previous Dosage(If Any)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/previous_textView"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:singleLine="true"
+        android:background="@drawable/layout_view_shape"
+        android:hint="Any Reaction"
+        app:hintTextColor="@color/grey"
+        android:textColor="@color/black"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prevousView"/>
+
+
+    <TextView
+        android:id="@+id/birthHistory"
+        style="@style/normaltxt_18sp_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Add Birth History"
+        android:textColor="@color/newcolor"
+        app:layout_constraintEnd_toEndOf="@+id/previous_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/previous_textView">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/deli_type"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delivery Type"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="@+id/birthHistory"
+        app:layout_constraintTop_toBottomOf="@+id/birthHistory" />
+
+    <TextView
+        android:id="@+id/deli_period"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delivery Period"
+        app:layout_constraintBottom_toBottomOf="@+id/deli_type"
+        app:layout_constraintStart_toStartOf="@+id/delivery_period"
+        app:layout_constraintTop_toTopOf="@+id/deli_type" />
+
+    <Spinner
+        android:id="@+id/normal_textView"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cus_sp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:popupBackground="@drawable/spinner_dropdown_newitem"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/delivery_period"
+        app:layout_constraintStart_toStartOf="@+id/birthHistory"
+        app:layout_constraintTop_toBottomOf="@id/deli_type" />
+
+    <Spinner
+        android:id="@+id/delivery_period"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cus_sp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:popupBackground="@drawable/spinner_dropdown_newitem"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/normal_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/normal_textView"
+        app:layout_constraintTop_toTopOf="@+id/normal_textView" />
+
+
+
+    <TextView
+        android:id="@+id/uploadnicBTN"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/upload_btn_shape"
+        android:drawableStart="@drawable/ic_upload_img"
+        android:fontFamily="@font/gilroy_medium"
+        android:paddingLeft="@dimen/dp_50"
+        android:text="@string/upload_nicu_details"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/dp_50"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/normal_textView" />
+
+    <TextView
+        android:id="@+id/any_birth"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        android:text="Any Seizures at Birth"
+        app:layout_constraintStart_toStartOf="@+id/uploadnicBTN"
+        app:layout_constraintTop_toBottomOf="@+id/uploadnicBTN" />
+
+    <Spinner
+        android:id="@+id/seizures"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cus_sp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:popupBackground="@drawable/spinner_dropdown_newitem"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/uploadnicBTN3"
+        app:layout_constraintStart_toStartOf="@+id/any_birth"
+        app:layout_constraintTop_toBottomOf="@+id/any_birth" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadnicBTN3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/upload_btn_shape"
+        android:drawableStart="@drawable/ic_upload_img"
+        android:drawablePadding="@dimen/dp_10"
+        android:fontFamily="@font/gilroy_medium"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_3"
+        android:text="@string/upload_birth_history"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/seizures"
+        app:layout_constraintEnd_toEndOf="@+id/uploadnicBTN"
+        app:layout_constraintStart_toEndOf="@+id/seizures"
+        app:layout_constraintTop_toTopOf="@+id/seizures" />
+
+    <TextView
+        android:id="@+id/anyMedical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="Any Medical Disorder at time of Birth"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="@+id/seizures"
+        app:layout_constraintTop_toBottomOf="@+id/seizures" />
+
+    <EditText
+        android:id="@+id/medical_dis"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_view_shape"
+        android:hint="Medical Disorder"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:hintTextColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/uploadnicBTN3"
+        app:layout_constraintStart_toStartOf="@+id/seizures"
+        app:layout_constraintTop_toBottomOf="@+id/anyMedical" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/lorem_view"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="@dimen/dp_10"-->
+<!--        android:layout_marginEnd="@dimen/dp_16"-->
+<!--        android:enabled="false"-->
+<!--        android:hint="@string/lorem_ipsum_dolar"-->
+<!--        app:boxStrokeColor="@color/grey"-->
+<!--        app:hintTextColor="@color/grey"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/anyMedical">-->
+
+<!--        &lt;!&ndash;this is the actual edit text which takes the input&ndash;&gt;-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/lorem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/gilroy_regular"-->
+<!--            android:gravity="left"-->
+<!--            android:background="@drawable/layout_view_shape"-->
+<!--            android:textColor="@color/blackk"-->
+<!--            android:textSize="@dimen/dp_14" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

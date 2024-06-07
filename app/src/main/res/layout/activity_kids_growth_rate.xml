@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.KidsGrowthRateActivity">
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView60"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/bar_style" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView61"-->
+<!--        android:layout_width="26dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageView60"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageView60"-->
+<!--        app:srcCompat="@drawable/ic_back_white" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView138"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="96dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:text="Kids Growth Record"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:theme="@style/normaltxt_17sp_Bold"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView61"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageView60" />-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/light_grey"-->
+<!--        android:padding="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView60">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView106"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="14dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:fontFamily="@font/gilroy_bold"-->
+<!--            android:text="Select Member"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <EditText-->
+
+<!--            android:id="@+id/editText13"-->
+<!--            style="@style/MyEditTextBoxStyle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="@drawable/rounded_edittext"-->
+<!--            android:hint="Yes Verma (son) "-->
+<!--            android:inputType="text"-->
+<!--            android:padding="10dip"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView106" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/constraintLayout2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/const_layout_shape"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/EditText00"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:fontFamily="@font/gilroy_bold"-->
+<!--                    android:text="Yash Verma"-->
+<!--                    android:textColor="@color/newcolor"-->
+<!--                    android:textSize="@dimen/sp_16"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/dp_16"-->
+<!--                    android:src="@drawable/ic_edit_img"-->
+<!--                    app:layout_constraintEnd_toStartOf="@id/imageView64"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView64"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="@dimen/dp_24"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:srcCompat="@drawable/ic_delete" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/age"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="19dp"-->
+<!--                    android:text="Age"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:theme="@style/normaltxt_12sp_bold"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/EditText00"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/EditText00" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView146"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="6 Months"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/age"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/age" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView147"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="132dp"-->
+<!--                    android:text="Gender"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:theme="@style/normaltxt_12sp_bold"-->
+<!--                    app:layout_constraintBaseline_toBaselineOf="@+id/age"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/age" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Male"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/textView147"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/textView147" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textviewdob"-->
+<!--                    android:layout_width="@dimen/dp_0"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/sp_16"-->
+<!--                    android:text="DOB"-->
+<!--                    android:theme="@style/normaltxt_12sp_bold"-->
+<!--                    app:layout_constraintBaseline_toBaselineOf="@+id/textView147"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/dobtext"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_5"-->
+<!--                    android:text="01-june-2022"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/textviewdob"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/textviewdob" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/relationText"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_14"-->
+<!--                    android:text="Relation"-->
+<!--                    android:theme="@style/normaltxt_12sp_bold"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/textView146"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/textView146" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/relationtext2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Son"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/relationText"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/relationText" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/alergiesview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="14dp"-->
+<!--                    android:text="Allergies &amp; Medical Conditions Lactose intolerant"-->
+<!--                    android:theme="@style/normaltxt_12sp_bold"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/dobtext"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/dobtext" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lactose_intolerent"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_5"-->
+<!--                    android:text="@string/lactose_intolerent"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/alergiesview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/alergiesview" />-->
+
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/upload_chat_btn"-->
+<!--                    android:layout_width="@dimen/dp_0"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_18"-->
+<!--                    android:background="@drawable/uploaded_btn"-->
+<!--                    android:drawableEnd="@drawable/ic_pdf_img_red"-->
+<!--                    android:elevation="@dimen/dp_14"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="@dimen/dp_8"-->
+<!--                    android:paddingRight="16dp"-->
+<!--                    android:text="Uploaded Vaccination chart"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:theme="@style/medium_pinkColor_12"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/lactose_intolerent"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/relationtext2"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/relationtext2" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/previous_dosageview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_14"-->
+<!--                    android:text="Any Reaction with previous Dosage"-->
+<!--                    android:theme="@style/normaltxt_12sp_Semibold"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/upload_chat_btn"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/upload_chat_btn" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/na"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_5"-->
+<!--                    android:text="N/A"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/previous_dosageview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/previous_dosageview" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/babybirthview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_18"-->
+<!--                    android:text="Baby's Birth History"-->
+<!--                    android:textColor="@color/newcolor"-->
+<!--                    android:theme="@style/normaltxt_16sp_bold"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/na"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/na" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/deliveryview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_16"-->
+<!--                    android:text="Delivery"-->
+<!--                    android:theme="@style/normaltxt_12sp_Semibold"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/babybirthview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/babybirthview" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/normalview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Normal , Premature"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/deliveryview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/deliveryview" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/seizuresview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="@dimen/dp_16"-->
+<!--                    android:text="Any Seizures at Birth"-->
+<!--                    android:theme="@style/normaltxt_12sp_Semibold"-->
+<!--                    app:layout_constraintBaseline_toBaselineOf="@+id/deliveryview"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/yesview"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_8"-->
+<!--                    android:text="Yes"-->
+<!--                    android:theme="@style/normaltxt_12sp_Regular"-->
+<!--                    app:layout_constraintEnd_toEndOf="@id/seizuresview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/seizuresview" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/upload_chat_btn2"-->
+<!--                    android:layout_width="@dimen/dp_0"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_18"-->
+<!--                    android:background="@drawable/uploaded_btn_blue"-->
+<!--                    android:drawableEnd="@drawable/ic_pdf_blue"-->
+<!--                    android:elevation="@dimen/dp_14"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="@dimen/dp_8"-->
+<!--                    android:paddingRight="16dp"-->
+<!--                    android:text="NICU Records"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:theme="@style/medium_blueColor_12"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/yesview"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/normalview"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/normalview" />-->
+
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:id="@+id/upload_chat_btn3"-->
+<!--                    android:layout_width="@dimen/dp_0"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/dp_18"-->
+<!--                    android:background="@drawable/uploades_btn_orange"-->
+<!--                    android:drawableEnd="@drawable/ic_pdf_orange"-->
+<!--                    android:elevation="@dimen/dp_14"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="@dimen/dp_8"-->
+<!--                    android:paddingRight="16dp"-->
+<!--                    android:text="Birth History:"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:theme="@style/medium_orangeColor_12"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/upload_chat_btn2"-->
+<!--                    app:layout_constraintStart_toStartOf="@id/upload_chat_btn2"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/upload_chat_btn2" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/growthRecord_view"-->
+<!--                android:layout_width="@dimen/dp_0"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Growth Record"-->
+<!--                android:layout_marginTop="@dimen/dp_20"-->
+<!--                style="@style/normaltxt_18sp_bold"-->
+<!--                app:layout_constraintStart_toStartOf="@id/constraintLayout3"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/constraintLayout3"/>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerview_kids"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/dp_20"-->
+<!--                android:layout_marginStart="@dimen/dp_16"-->
+<!--                app:layout_constraintStart_toStartOf="@id/growthRecord_view"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/growthRecord_view"/>-->
+
+<!--            <TextView-->
+<!--                style="@style/normaltxt_18sp_bold"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Growt Chart"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                android:layout_marginStart="@dimen/dp_16"-->
+<!--                android:layout_marginTop="@dimen/dp_20"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/recyclerview_kids"-->
+<!--                android:textColor="@color/newcolor" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

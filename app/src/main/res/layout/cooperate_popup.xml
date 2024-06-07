@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <TextView
+                android:id="@+id/dialog_text"
+                style="@style/normaltxt_20sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="Corporate Employee Coupon"
+                android:textAlignment="center"
+                android:textColor="@color/newcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvCo_operatePopup"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginTop="@dimen/dp_8"
+                android:hint="Select CompanyName"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dialog_text"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_Gender"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:editable="false">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>-->
+            <TextView
+                android:id="@+id/tvCo_operatePopup"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableRight="@drawable/ic_newdropdown"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:elevation="@dimen/dp_4"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/dialog_text"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_text" />
+
+            <Spinner
+                android:id="@+id/CoperteSpinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/tvCo_operatePopup"
+                app:layout_constraintStart_toStartOf="@+id/tvCo_operatePopup"
+                app:layout_constraintTop_toTopOf="@+id/tvCo_operatePopup" />
+            <EditText
+                android:id="@+id/ed_EmployeeId"
+                style="@style/normaltxt_12sp_light"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_view_shape"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:elevation="@dimen/dp_4"
+                android:hint="@string/enter_employee_id"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/tvCo_operatePopup"
+                app:layout_constraintStart_toStartOf="@+id/tvCo_operatePopup"
+                app:layout_constraintTop_toBottomOf="@id/tvCo_operatePopup" />
+            <TextView
+                android:id="@+id/dialogConfromCo_Operate"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/common_btn_bg"
+                android:padding="@dimen/dp_10"
+                android:text="Apply"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/ed_EmployeeId"
+                app:layout_constraintStart_toStartOf="@+id/ed_EmployeeId"
+                app:layout_constraintTop_toBottomOf="@+id/ed_EmployeeId" />
+
+            <TextView
+                android:id="@+id/dialog_cancelCo_operate"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="@dimen/dp_10"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/dialogConfromCo_Operate"
+                app:layout_constraintStart_toStartOf="@+id/dialogConfromCo_Operate"
+                app:layout_constraintTop_toBottomOf="@+id/dialogConfromCo_Operate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

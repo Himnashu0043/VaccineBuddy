@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="44" viewBox="0 0 62 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4684" data-name="Rectangle 4684" width="62" height="15" transform="translate(-8.5 30.552)" fill="#fff" stroke="#858585" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_73456" data-name="Group 73456" transform="translate(-1537 5652)">
+    <g id="Tab_1" data-name="Tab 1" transform="translate(1545.5 -5653.552)">
+      <g id="noun_Home_3020400" transform="translate(-116.237 -134.364)">
+        <path id="Path_4597" data-name="Path 4597" d="M138.364,135.917c-.027,0-.054,0-.081,0a.827.827,0,0,0-.484.2l-10.766,9.444a.828.828,0,1,0,1.1,1.242l10.214-8.956,10.223,8.956a.828.828,0,1,0,1.093-1.242l-10.764-9.444a.828.828,0,0,0-.531-.2Zm-9.142,12.1a.83.83,0,0,0-.813.845V159.67a.829.829,0,0,0,.831.831l6.291-.045a.828.828,0,0,0,1.157-.78v-.041c0-.028,0-.055,0-.084v-5.725H140v5.8a.829.829,0,0,0,.4.71h0a.827.827,0,0,0,.494.163h6.56a.828.828,0,0,0,.825-.831V148.862a.828.828,0,1,0-1.656,0v9.983h-4.97V153a.829.829,0,0,0-.826-.825h-4.97q-.043,0-.086,0a.828.828,0,0,0-.739.825v5.8l-4.971.036v-9.977a.828.828,0,0,0-.844-.845Z" transform="translate(0)" fill="#858585"/>
+      </g>
+      <g id="Mask_Group_43" data-name="Mask Group 43" clip-path="url(#clip-path)">
+        <text id="Label" transform="translate(22.5 41.552)" fill="#858585" font-size="11" font-family="Gilroy-Medium, Gilroy" font-weight="500"><tspan x="-14.899" y="0">Home</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

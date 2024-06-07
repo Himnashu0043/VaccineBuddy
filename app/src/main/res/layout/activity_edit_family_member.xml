@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.EditFamilyMenber.EditFamilyMemberActivity">
+
+    <include
+        android:id="@+id/editFamilyMemberToolbar"
+        layout="@layout/common_toolbar" />
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="@string/full_name"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gilroy_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFamilyMemberToolbar" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/settings_view_shape"
+      android:singleLine="true"
+        android:maxLength="30"
+        android:fontFamily="@font/gilroy_regular"
+        android:hint="Enter Full name"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColor="@color/newcolor"
+        android:textColorHint="@color/newcolor"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Relation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/layout_view_shape"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="fill_vertical"
+        android:drawableEnd="@drawable/ic_newdropdown"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingLeft="@dimen/dp_16"
+        android:text="Son"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Date of Birth"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="@+id/textView69"
+        app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/settings_view_shape"
+        android:drawableRight="@drawable/cal_img"
+        android:gravity="fill_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:text="08/06/1999"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView70"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:drawableEnd="@drawable/ic_newdropdown"
+        android:paddingEnd="@dimen/dp_16"
+        android:background="@drawable/layout_view_shape"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="fill_vertical"
+        android:paddingLeft="@dimen/dp_16"
+        android:text="Male"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView72"
+        app:layout_constraintTop_toBottomOf="@+id/textView72"/>
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="Allergies or medical Condition (If Any)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="@+id/textView73"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/settings_view_shape"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:paddingEnd="@dimen/dp_16"
+        android:fontFamily="@font/gilroy_regular"
+        android:hint="Lactose intolerant"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_16"
+        android:textColor="@color/newcolor"
+        android:textColorHint="@color/newcolor"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView74"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView69"
+        app:layout_constraintEnd_toEndOf="@+id/textView69"
+        app:layout_constraintTop_toTopOf="@+id/textView69" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_36"
+        app:layout_constraintBottom_toBottomOf="@+id/textView73"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView73" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/btncolor"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

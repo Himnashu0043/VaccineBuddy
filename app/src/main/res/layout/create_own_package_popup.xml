@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvinn"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Total Package Price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPackage1Price"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:textColor="@color/grey"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvinn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvinn" />
+
+            <View
+                android:id="@+id/divider25"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/newblack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvinn" />
+
+            <TextView
+                android:id="@+id/tvinnnn"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total Home Vaccination Price"
+                app:layout_constraintStart_toStartOf="@+id/tvinn"
+                app:layout_constraintTop_toBottomOf="@+id/divider25" />
+
+            <TextView
+                android:id="@+id/tvhomePrice"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/grey"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvinnnn"
+                app:layout_constraintEnd_toEndOf="@+id/tvPackage1Price"
+                app:layout_constraintTop_toTopOf="@+id/tvinnnn" />
+
+            <View
+                android:id="@+id/divider255"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/newblack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvinnnn" />
+
+            <TextView
+                android:id="@+id/tvinnnnn"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total Price"
+                app:layout_constraintStart_toStartOf="@+id/tvinnnn"
+                app:layout_constraintTop_toBottomOf="@+id/divider255" />
+
+            <TextView
+                android:id="@+id/tvtotalPrice"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/grey"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvinnnnn"
+                app:layout_constraintEnd_toEndOf="@+id/tvhomePrice"
+                app:layout_constraintTop_toTopOf="@+id/tvinnnnn" />
+
+            <View
+                android:id="@+id/divider2555"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/newblack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvinnnnn" />
+
+            <TextView
+                android:id="@+id/tvcancel"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="Cancel"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvOk"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2555" />
+
+            <TextView
+                android:id="@+id/tvOk"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_30"
+                android:padding="@dimen/dp_5"
+                android:text="Ok"
+                android:gravity="center"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvcancel"
+                app:layout_constraintTop_toTopOf="@+id/tvcancel" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView78"-->
+            <!--                style="@style/normaltxt_14sp_bold"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/dp_12"-->
+            <!--                android:layout_marginTop="@dimen/dp_8"-->
+            <!--                android:text="Total Price"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/rv_Total_Package" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvTotalPrice_Ttl_Package"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginEnd="@dimen/dp_12"-->
+            <!--                style="@style/normaltxt_14sp_bold"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/textView78"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/textView78" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvOk_Ttl_Package"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:layout_marginBottom="8dp"-->
+            <!--                android:text="Ok"-->
+            <!--                android:padding="@dimen/dp_5"-->
+            <!--                style="@style/normaltxt_14sp_bold"-->
+            <!--                android:textColor="@color/darknavyblue2"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView78" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

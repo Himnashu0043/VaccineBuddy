@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.AddNewAddress">
+
+    <include
+        android:id="@+id/addnewAddress"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addnewAddress"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView125"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Enter Contact Person Name"
+                android:textColor="@color/black"
+
+
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView125"
+                app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+            <TextView
+                android:id="@+id/textView126"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Enter Contact Person Phone Number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/edName"
+                app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+            <EditText
+                android:id="@+id/edPhone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView126"
+                app:layout_constraintTop_toBottomOf="@+id/textView126" />
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Plot / Flat No."
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/edPhone"
+                app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+            <EditText
+                android:id="@+id/edPlat"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_view_shape"
+                android:hint="Please Enter Plot / Flat No."
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/edPhone"
+                app:layout_constraintStart_toStartOf="@+id/edPhone"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView1271"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Tower / Apartment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/edPlat"
+                app:layout_constraintTop_toBottomOf="@+id/edPlat" />
+
+            <EditText
+                android:id="@+id/edTower"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_view_shape"
+                android:hint="Enter Tower / Apartment No."
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/edPlat"
+                app:layout_constraintStart_toStartOf="@+id/edPlat"
+                app:layout_constraintTop_toBottomOf="@+id/textView1271" />
+
+            <TextView
+                android:id="@+id/textView127"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Enter Street Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/textView1271"
+                app:layout_constraintTop_toBottomOf="@+id/edTower" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:hint="Please Enter Street Address"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView127"
+                app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
+            <TextView
+                android:id="@+id/textView128"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Select State"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/edEmail"
+                app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+            <EditText
+                android:id="@+id/tvStateSp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:background="@drawable/layout_view_shape"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/select_state"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:focusable="false"
+                android:layout_marginTop="@dimen/dp_11"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="@+id/edEmail"
+                app:layout_constraintStart_toStartOf="@+id/textView128"
+                app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+            <!--<Spinner
+                android:id="@+id/tvStateSp"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/cus_sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:visibility="visible"
+                android:popupBackground="@drawable/spinner_dropdown_newitem"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView128"
+                app:layout_constraintTop_toBottomOf="@+id/textView128" />-->
+            <Spinner
+                android:id="@+id/stateSp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStateSp"
+                app:layout_constraintEnd_toEndOf="@+id/tvStateSp"
+                app:layout_constraintStart_toStartOf="@+id/tvStateSp"
+                app:layout_constraintTop_toTopOf="@+id/tvStateSp" />
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Select city"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/tvStateSp"
+                app:layout_constraintTop_toBottomOf="@+id/tvStateSp" />
+
+            <EditText
+                android:id="@+id/tvCitySp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_11"
+                android:background="@drawable/layout_view_shape"
+                android:focusable="false"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/select_city"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="@+id/tvStateSp"
+                app:layout_constraintStart_toStartOf="@+id/textView130"
+                app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+            <!--<Spinner
+                android:id="@+id/tvCitySp"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/cus_sp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_10"
+                android:visibility="visible"
+                android:popupBackground="@drawable/spinner_dropdown_newitem"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView130"
+                app:layout_constraintTop_toBottomOf="@+id/textView130" />-->
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Enter Pincode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/tvCitySp"
+                app:layout_constraintTop_toBottomOf="@+id/tvCitySp" />
+
+            <EditText
+                android:id="@+id/edPincode"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:fontFamily="@font/gilroy_regular"
+                android:hint="@string/enter_pincode"
+                android:inputType="phone"
+                android:focusable="false"
+                android:paddingStart="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Select Address Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintStart_toStartOf="@+id/edPincode"
+                app:layout_constraintTop_toBottomOf="@+id/edPincode" />
+
+            <Spinner
+                android:id="@+id/tvAddressTypeSp"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/cus_sp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_10"
+                android:popupBackground="@drawable/spinner_dropdown_newitem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView133"
+                app:layout_constraintTop_toBottomOf="@+id/textView133" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="16dp"
+                android:buttonTint="@color/darknavyblue2"
+                android:checked="false"
+                app:layout_constraintStart_toStartOf="@+id/tvAddressTypeSp"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddressTypeSp" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:fontFamily="@font/gilroy_regular"
+                android:text="Mark it as default address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+                app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+            <TextView
+                android:id="@+id/button12"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btncolor"
+                android:gravity="center"
+                android:text="Add Address"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView135" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

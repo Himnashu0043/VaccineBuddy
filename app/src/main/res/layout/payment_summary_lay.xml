@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView142"
+            style="@style/normaltxt_18sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Payment Summary"
+            android:textColor="@color/newcolor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView143"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Package Name"
+            app:layout_constraintStart_toStartOf="@+id/textView142"
+            app:layout_constraintTop_toBottomOf="@+id/textView142" />
+
+        <TextView
+            android:id="@+id/textView144"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left"
+            android:text="(Economy)"
+            android:textColor="@color/newcolor"
+            app:layout_constraintBottom_toBottomOf="@+id/textView143"
+            app:layout_constraintEnd_toStartOf="@+id/textView145"
+            app:layout_constraintStart_toEndOf="@+id/textView143"
+            app:layout_constraintTop_toTopOf="@+id/textView143" />
+
+        <TextView
+            android:id="@+id/textView145"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            android:text="₹3000"
+
+            app:layout_constraintBottom_toBottomOf="@+id/textView144"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView144"
+            app:layout_constraintTop_toTopOf="@+id/textView144" />
+
+        <TextView
+            android:id="@+id/textView146"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Covid Shield"
+            app:layout_constraintStart_toStartOf="@+id/textView143"
+            app:layout_constraintTop_toBottomOf="@+id/textView143" />
+
+        <TextView
+            android:id="@+id/textView147"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left"
+            android:text="(2 Dose * 1500)"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/textView146"
+            app:layout_constraintEnd_toStartOf="@+id/textView148"
+            app:layout_constraintStart_toEndOf="@+id/textView146"
+            app:layout_constraintTop_toTopOf="@+id/textView146" />
+
+        <TextView
+            android:id="@+id/textView148"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="right"
+            android:text="₹3000"
+            app:layout_constraintBottom_toBottomOf="@+id/textView147"
+            app:layout_constraintEnd_toEndOf="@+id/textView145"
+            app:layout_constraintStart_toEndOf="@+id/textView147"
+            app:layout_constraintTop_toTopOf="@+id/textView147" />
+
+        <TextView
+            android:id="@+id/textView149"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Home Vaccination Charge"
+            app:layout_constraintStart_toStartOf="@+id/textView146"
+            app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+        <TextView
+            android:id="@+id/textView150"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="left"
+            android:text="(2 * Rs 500)"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/textView149"
+            app:layout_constraintEnd_toStartOf="@+id/textView151"
+            app:layout_constraintStart_toEndOf="@+id/textView149"
+            app:layout_constraintTop_toTopOf="@+id/textView149" />
+
+        <TextView
+            android:id="@+id/textView151"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="right"
+            android:text="₹3000"
+            app:layout_constraintBottom_toBottomOf="@+id/textView150"
+            app:layout_constraintEnd_toEndOf="@+id/textView148"
+            app:layout_constraintStart_toEndOf="@+id/textView150"
+            app:layout_constraintTop_toTopOf="@+id/textView150" />
+
+        <TextView
+            android:id="@+id/textView152"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="32dp"
+            android:text="Discount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView149"
+            app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+        <TextView
+            android:id="@+id/textView153"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-₹30"
+            app:layout_constraintBottom_toBottomOf="@+id/textView152"
+            app:layout_constraintEnd_toEndOf="@+id/textView151"
+            app:layout_constraintTop_toTopOf="@+id/textView152" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

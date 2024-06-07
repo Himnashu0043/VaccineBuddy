@@ -1,0 +1,33 @@
+package com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.Modal.PackageDetails
+
+data class AskedPackage(
+    val __v: Int,
+    val _id: String,
+    val adminId: String,
+    val ageGroup: List<String>,
+    val ballanceStock: String,
+    val categoryId: String,
+    val categoryName: String? = null,
+    val consultingFee: String,
+    val createdAt: String,
+    val description: String,
+    val doseInfo: ArrayList<DoseInfo>,
+    val homeVaccinationFee: String,
+    val includedConsultant: ArrayList<String>,
+    val offerPrice: String,
+    val packageImage: String,
+    val packageName: String,
+    val package_number: String,
+    val package_rank: Int,
+    val price: String,
+    val ratingcount: List<Any>,
+    val status: String,
+    val subCategoryId: String,
+    val subCategoryName: String,
+    val totalConsultantFee: String,
+    val totalPrice: String,
+    val totalStock: String,
+    val totalVaccinationFee: String,
+    val updatedAt: String,
+    val usedStock: String
+)

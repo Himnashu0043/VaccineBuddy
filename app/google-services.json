@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "42251382398",
+    "project_id": "vaccine-buddy-61bb1",
+    "storage_bucket": "vaccine-buddy-61bb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42251382398:android:58b01b9047ad2517b8b22f",
+        "android_client_info": {
+          "package_name": "com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42251382398-0uaqd2bec9p96e0bhaoepdl4bfe2aa67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy",
+            "certificate_hash": "547b3532ec31596b0dce631ff83e42786eaa9f45"
+          }
+        },
+        {
+          "client_id": "42251382398-gseojqgl295rckigual685f2d69t1de5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy",
+            "certificate_hash": "ae8f7ee9176c5aa07e83ef7a6d077998e5c92ccc"
+          }
+        },
+        {
+          "client_id": "42251382398-lk72ph7l39r7h882dachti9qingh4rmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy",
+            "certificate_hash": "36bd00b240bbbf0d3ade4fb85721302585439ef3"
+          }
+        },
+        {
+          "client_id": "42251382398-c4j56lommchsipl4147b348nqeg7s71n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl895KhUe9kbYswazVXB4gMSXO51qMUmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42251382398-c4j56lommchsipl4147b348nqeg7s71n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "42251382398-hjr5aooa81emn53rpb67m40n8cbia30g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "VB-Healthtech-Pvt-Ltd.Vaccine-Buddy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

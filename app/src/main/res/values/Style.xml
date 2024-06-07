@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/dp_12</item>
+        <item name="android:fontFamily">@font/gilroy_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/dp_5</item>
+    </style>
+    <style name="normaltxt_24sp_bold">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="millaCilla_45sp">
+        <item name="android:textSize">@dimen/sp_45</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="normaltxt_20sp_bold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_20spMedium">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_22sp_bold">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="normaltxt_20sp_Semibold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_20sp_extraBold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_extrabold</item>
+    </style>
+
+    <style name="normaltxt_18sp_bold">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_18sp_Semibold">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+
+    <style name="extraBold_30sp">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="normaltxt_18sp_Medium">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+
+    <style name="normaltxt_17sp_Semibold">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_16sp_Semibold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style><style name="normaltxt_16sp_Regular">
+    <item name="android:textSize">@dimen/sp_16</item>
+    <item name="android:textColor">@color/black</item>
+
+    <item name="android:fontFamily">@font/gilroy_light</item>
+</style>
+
+    <style name="normaltxt_16sp_Medium">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_16sp_bold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="tofino_16sp_bold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_14sp_bold">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+
+    </style>
+    <style name="normaltxt_14sp_light">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_light</item>
+
+    </style>
+    <style name="normaltxt_14sp_Medium">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+
+    </style>
+    <style name="normaltxt_11sp_Regular">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+
+    </style>
+    <style name="normaltxt_14sp_Regular">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+
+    </style>
+
+    <style name="normaltxt_14sp_Semibold">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+
+    <style name="normaltxt_28sp_Medium">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+
+    <style name="normaltxt_15sp_light">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_light</item>
+    </style>
+
+    <style name="normaltxt_15sp_semi_bold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_15spbold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="normaltxt_15sp_Regular">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+
+    </style>
+    <style name="normaltxt_10sp_Regular">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style>
+    <style name="normaltxt_12sp_Semibold">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_12sp_bold">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_12sp_Regular">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style>
+    <style name="normaltxt_12sp_light">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_light</item>
+    </style>
+    <style name="normaltxt_12sp_Medium">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_13sp_Regular">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style>
+    <style name="normaltxt_13sp_Medium">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_13sp_RegularItalic">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regularitalic</item>
+    </style>
+    <style name="normaltxt_34sp_bold">
+        <item name="android:textSize">@dimen/sp_34</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+
+    </style>
+    <style name="normaltxt_10sp_Medium">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_10sp_MediumItalic">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_mediumitalic</item>
+    </style>
+    <style name="normaltxt_30sp_Extrabold">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_extrabold</item>
+    </style>
+    <style name="normaltxt_11sp_light">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_light</item>
+    </style>
+    <style name="normaltxt_11sp_bold">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_13sp_Bold">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_17sp_Regular">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style>
+    <style name="normaltxt_17sp_Bold">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+    <style name="normaltxt_10sp_semiBold">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_15sp_Semibold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_semibold</item>
+    </style>
+    <style name="normaltxt_15sp_Medium">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <style name="normaltxt_53sp_Regular">
+        <item name="android:textSize">@dimen/sp_53</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+
+    </style>
+    <style name="normaltxt_8sp_Regular">
+        <item name="android:textSize">@dimen/sp_8</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+    </style><style name="normaltxt_8sp_bold">
+    <item name="android:textSize">@dimen/sp_8</item>
+    <item name="android:textColor">@color/black</item>
+
+    <item name="android:fontFamily">@font/gilroy_bold</item>
+</style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="service_10_imge_shapeable_overloay">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="bottom_10_imge_shapeable_overloay">
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_10</item>
+
+    </style>
+</resources>

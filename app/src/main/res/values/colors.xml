@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="newblack">#333333</color>
+    <color name="blackk">#151940</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FE8900</color>
+    <color name="skyblue">#2798D3</color>
+    <color name="darknavyblue">#2798D3</color><!--
+    <color name="darknavyblue">#333333</color>-->
+    <color name="newcolor">#151940</color>
+    <color name="screen">#F2F1F5</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="dark_grey">#666666</color>
+    <color name="darknavyblue2">#2795D3</color>
+    <color name="textColorHighlight">#4DD81B60</color>
+    <color name="light_grey">#F2F1F5</color>
+    <color name="pink">#D41C5B</color>
+    <color name="colorr">#f9f9f9</color>
+    <color name="grey3">#f9f9f9</color><!--
+    <color name="grey3">#B1B2B4v</color>-->
+    <color name="listitemColor">#8E8E93</color>
+    <color name="edittext_color">#6B6B6B80</color>
+    <color name="home_viewAll">#D3F1F3</color>
+
+    <color name="app_bg">#EEEFF2</color>
+    <color name="text_selected">#b0003a</color>
+    <color name="text_focused">#E91E63</color>
+    <color name="text_default">#F8BBD0</color>
+    <color name="line_selected">#E91E63</color>
+    <color name="line_focused">#3F51B5</color>
+    <color name="line_default">#C5CAE9</color>
+</resources>
+

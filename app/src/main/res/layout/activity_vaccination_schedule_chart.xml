@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.VaccinationScheduleChart">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bar_style"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_52"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/vaccination_schedule_chart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="24dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/ic_back_white" />
+
+
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="left"
+        android:text="@string/select_family_member_for_which_you_are_scheduling_a_call"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/textview_shape"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/yash_verma"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:textColorHint="@color/newcolor"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="@+id/textView45"
+        app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/date_of_birth"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/age"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/textview_shape"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:text="@string/_08_06_1996"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toStartOf="@+id/textView49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/textview_shape"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="@string/_6_week"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/relation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/textview_shape"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/son"
+        android:paddingStart="@dimen/dp_8"
+        android:textColorHint="@color/newcolor"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintEnd_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView51"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="@string/add_new_member"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="@+id/textView51"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/at_birth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/at_birth"
+            android:textAlignment="center"
+            android:textColor="@color/newcolor"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/at_birth"
+            tools:layout_editor_absoluteY="4dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/inclu2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/hap_b_bcg_opv"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toEndOf="@id/view4"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/inclu2"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <TextView
+            android:id="@+id/due2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/_04_08_22"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toEndOf="@id/view5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/due2"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/describe2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/tableview"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view6"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <TextView
+            android:id="@+id/six_month_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="6 Months"
+            android:textAlignment="center"
+            android:textColor="@color/newcolor"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/six_month_view"
+            tools:layout_editor_absoluteY="4dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/inclu3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/hap_b_bcg_opv"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toEndOf="@id/view7"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/inclu3"
+            tools:ignore="MissingConstraints">
+
+        </View>
+
+        <TextView
+            android:id="@+id/due3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/_04_08_22"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toEndOf="@id/view8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp_8"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/due3"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/describe3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:fontFamily="@font/gilroy_regular"
+            android:text="@string/tableview"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view9"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout6"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+    <TextView
+        android:id="@+id/nine_month_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="9 Months"
+        android:textAlignment="center"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/nine_month_view"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints">
+    </View>
+
+    <TextView
+        android:id="@+id/inclu4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/hap_b_bcg_opv"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toEndOf="@id/view10"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/inclu4"
+        tools:ignore="MissingConstraints">
+
+    </View>
+
+    <TextView
+        android:id="@+id/due4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/_04_08_22"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toEndOf="@id/view11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/due4"
+        tools:ignore="MissingConstraints">
+    </View>
+
+    <TextView
+        android:id="@+id/describe4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/tableview"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view12"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout7"
+    android:layout_width="0dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <TextView
+            android:id="@+id/twelve_month_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="12 Months"
+            android:textAlignment="center"
+            android:textColor="@color/newcolor"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/twelve_month_view"
+        tools:layout_editor_absoluteY="4dp"
+        tools:ignore="MissingConstraints">
+    </View>
+
+    <TextView
+        android:id="@+id/inclu5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/hap_b_bcg_opv"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toEndOf="@id/view13"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/inclu5"
+        tools:ignore="MissingConstraints">
+
+    </View>
+
+    <TextView
+        android:id="@+id/due5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/_04_08_22"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintStart_toEndOf="@id/view14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toEndOf="@id/due5"
+        tools:ignore="MissingConstraints">
+    </View>
+
+    <TextView
+        android:id="@+id/describe5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/tableview"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view15"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52">
+
+        <TextView
+            android:id="@+id/ageofbaby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/age_of_baby"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/ageofbaby"
+            tools:layout_editor_absoluteY="4dp"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/inclusionview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/inclusions"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/inclusionview"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/duedateview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/due_date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toEndOf="@id/view2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toEndOf="@id/duedateview"
+            tools:ignore="MissingConstraints">
+        </View>
+
+        <TextView
+            android:id="@+id/describeview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/century_gothic_bold"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toEndOf="@id/view3"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/book_vaccine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btncolor"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="@string/book_a_free_vaccination_counselling"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/buy_vaccine"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout7">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buy_vaccine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/design_vaccine_chart"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="@string/buy_vaccination_for_your_baby"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/book_vaccine"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout7">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

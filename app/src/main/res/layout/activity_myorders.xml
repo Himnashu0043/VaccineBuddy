@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.MyordersActivity">
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bar_style" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:srcCompat="@drawable/ic_back_white" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/my_order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_17"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+        app:layout_constraintStart_toEndOf="@+id/imageView30" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp_342"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView55">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:layout_width="114dp"
+            android:layout_height="@dimen/dp_36"
+            android:text="Current"
+            android:backgroundTint="@null"
+            android:background="@drawable/package_edit"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/darknavyblue"
+            android:textAllCaps="false"
+            android:fontFamily="@font/gilroy_bold"
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:layout_width="114dp"
+            android:layout_height="@dimen/dp_36"
+            android:text="Completed"
+            android:background="@drawable/vacine_edit"
+            android:backgroundTint="@null"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/darknavyblue"
+            android:textAllCaps="false"
+            android:fontFamily="@font/gilroy_bold"
+            app:layout_constraintStart_toEndOf="@id/btn1"
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:layout_width="114dp"
+            android:layout_height="@dimen/dp_36"
+            android:text="Cancelled"
+            android:background="@drawable/vacine_edit"
+            android:backgroundTint="@null"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toEndOf="@id/btn2"
+            android:textColor="@color/darknavyblue"
+            android:textAllCaps="false"
+            android:fontFamily="@font/gilroy_bold"
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_order"
+        android:layout_width="409dp"
+        android:layout_height="579dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.ScheduleForDose.ScheduleForDoseActivity">
+
+    <include
+        android:id="@+id/schedule_forToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule_forToolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/order"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Order Id - #21543"
+                android:textColor="@color/newcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/cancel_view"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Cancel Order"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/order"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/order" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/order">
+
+
+                <ImageView
+                    android:id="@+id/imgview"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_80"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:src="@drawable/vaccin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView148"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginEnd="8dp"
+                    android:text="Economy"
+                    android:theme="@style/normaltxt_15spbold"
+                    app:layout_constraintEnd_toStartOf="@+id/textView219"
+                    app:layout_constraintStart_toEndOf="@+id/imgview"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView149"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet cons."
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintEnd_toEndOf="@+id/textView148"
+                    app:layout_constraintStart_toStartOf="@+id/textView148"
+                    app:layout_constraintTop_toBottomOf="@+id/textView148" />
+
+                <TextView
+                    android:id="@+id/textView150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_3000"
+                    android:textColor="@color/newcolor"
+                    android:theme="@style/normaltxt_15spbold"
+                    app:layout_constraintStart_toStartOf="@+id/textView149"
+                    app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+                <TextView
+                    android:id="@+id/textView219"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginEnd="16dp"
+                    android:text="22 June 2022"
+                    android:theme="@style/normaltxt_10sp_Regular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/startview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_star__1_"
+                    app:layout_constraintStart_toEndOf="@id/textView150"
+                    app:layout_constraintTop_toBottomOf="@id/textView149" />
+
+                <TextView
+                    android:id="@+id/next_star"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="4.0"
+                    android:theme="@style/normaltxt_10sp_Medium"
+                    app:layout_constraintStart_toEndOf="@id/startview"
+                    app:layout_constraintTop_toBottomOf="@id/textView149" />
+
+                <TextView
+                    android:id="@+id/textView151"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="121 reviews"
+                    android:theme="@style/normaltxt_8sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/next_star"
+                    app:layout_constraintStart_toEndOf="@id/next_star"
+                    app:layout_constraintTop_toTopOf="@+id/next_star" />
+
+                <TextView
+                    android:id="@+id/included"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:text="Included Vaccines:"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintStart_toStartOf="@id/imgview"
+                    app:layout_constraintTop_toBottomOf="@id/imgview" />
+
+                <TextView
+                    android:id="@+id/after_include"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="12"
+                    android:textColor="@color/pink"
+                    app:layout_constraintBottom_toBottomOf="@+id/included"
+                    app:layout_constraintStart_toEndOf="@id/included"
+                    app:layout_constraintTop_toTopOf="@+id/included" />
+
+                <TextView
+                    android:id="@+id/textView152"
+                    style="@style/normaltxt_11sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:text="6 Dosage complete"
+                    android:textColor="@color/pink"
+                    app:layout_constraintStart_toStartOf="@id/included"
+                    app:layout_constraintTop_toBottomOf="@id/included" />
+
+                <TextView
+                    android:id="@+id/pending"
+                    style="@style/normaltxt_11sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="6 Pending Dosage"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView152"
+                    app:layout_constraintEnd_toEndOf="@+id/textView219" />
+
+                <TextView
+                    android:id="@+id/vaccine_for_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="For: Shikha"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/pending"
+                    app:layout_constraintStart_toStartOf="@id/textView152"
+                    app:layout_constraintTop_toBottomOf="@id/textView152" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/scheduleFMview"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="24dp"
+                android:text="Schedule For Family Member"
+                android:textColor="@color/newcolor"
+                android:theme="@style/normaltxt_18sp_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/const2" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/const3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scheduleFMview">
+
+                <TextView
+                    android:id="@+id/EditText00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:text="Yash Verma"
+                    android:textColor="@color/newcolor"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="Age"
+                    android:textColor="@color/black"
+                    android:theme="@style/normaltxt_12sp_bold"
+                    app:layout_constraintStart_toStartOf="@id/EditText00"
+                    app:layout_constraintTop_toBottomOf="@id/EditText00" />
+
+                <TextView
+                    android:id="@+id/textView146"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="6 Months"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintStart_toStartOf="@id/age"
+                    app:layout_constraintTop_toBottomOf="@id/age" />
+
+
+                <TextView
+                    android:id="@+id/textView147"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:theme="@style/normaltxt_12sp_bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/age"
+                    app:layout_constraintEnd_toStartOf="@+id/textviewdob"
+                    app:layout_constraintStart_toEndOf="@+id/age" />
+
+                <TextView
+                    android:id="@+id/textView220"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView146"
+                    app:layout_constraintEnd_toEndOf="@+id/textView147"
+                    app:layout_constraintStart_toStartOf="@id/textView147"
+                    app:layout_constraintTop_toTopOf="@+id/textView146" />
+
+                <TextView
+                    android:id="@+id/textviewdob"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sp_16"
+                    android:text="DOB"
+                    android:theme="@style/normaltxt_12sp_bold"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/textView147"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/dobtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="01-june-2022"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView220"
+                    app:layout_constraintEnd_toEndOf="@id/textviewdob"
+                    app:layout_constraintTop_toTopOf="@+id/textView220" />
+
+                <TextView
+                    android:id="@+id/relationText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="Relation"
+                    android:theme="@style/normaltxt_12sp_bold"
+                    app:layout_constraintStart_toStartOf="@id/textView146"
+                    app:layout_constraintTop_toBottomOf="@id/textView146" />
+
+                <TextView
+                    android:id="@+id/relationtext2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Son"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/relationText"
+                    app:layout_constraintTop_toBottomOf="@id/relationText" />
+
+                <TextView
+                    android:id="@+id/alergiesview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Allergies &amp; Medical Conditions"
+                    android:theme="@style/normaltxt_12sp_bold"
+                    app:layout_constraintEnd_toEndOf="@id/dobtext"
+                    app:layout_constraintTop_toBottomOf="@id/dobtext" />
+
+                <TextView
+                    android:id="@+id/lactose_intolerent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lactose_intolerent"
+                    android:theme="@style/normaltxt_12sp_Regular"
+                    app:layout_constraintBottom_toBottomOf="@+id/relationtext2"
+                    app:layout_constraintEnd_toEndOf="@id/alergiesview"
+                    app:layout_constraintTop_toTopOf="@+id/relationtext2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/scheduled_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="Scheduled Appointment"
+                android:textColor="@color/newcolor"
+                android:theme="@style/normaltxt_18sp_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/const3" />
+
+            <include
+                android:id="@+id/does_lay"
+                layout="@layout/does_details_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scheduled_history" />
+
+            <TextView
+                android:id="@+id/schedule_dose"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="16dp"
+                android:text="Schedule Your Dose"
+                android:textColor="@color/newcolor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/does_lay" />
+
+            <TextView
+                android:id="@+id/eligible_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:text="You are Eligible to schedule 6 Week dose"
+                android:theme="@style/normaltxt_12sp_Regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/schedule_dose"
+                app:layout_constraintTop_toBottomOf="@id/schedule_dose" />
+
+            <TextView
+                android:id="@+id/select_date_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Date"
+                android:theme="@style/normaltxt_12sp_Regular"
+                app:layout_constraintStart_toStartOf="@id/eligible_view"
+                app:layout_constraintTop_toBottomOf="@id/eligible_view" />
+
+            <TextView
+                android:id="@+id/date_text"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/layout_view_shape"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="08/06/1996"
+                android:textColor="@color/newcolor"
+                app:layout_constraintEnd_toStartOf="@+id/time_text"
+                app:layout_constraintStart_toStartOf="@id/select_date_view"
+                app:layout_constraintTop_toBottomOf="@id/select_date_view" />
+
+            <TextView
+                android:id="@+id/select_time_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Select Time"
+                android:theme="@style/normaltxt_12sp_Regular"
+                app:layout_constraintBottom_toBottomOf="@+id/select_date_view"
+                app:layout_constraintStart_toStartOf="@+id/time_text"
+                app:layout_constraintTop_toTopOf="@+id/select_date_view" />
+
+            <TextView
+                android:id="@+id/time_text"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableEnd="@drawable/ic_time"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="08:30"
+                android:textColor="@color/newcolor"
+                app:layout_constraintBottom_toBottomOf="@+id/date_text"
+                app:layout_constraintEnd_toEndOf="@+id/eligible_view"
+                app:layout_constraintStart_toEndOf="@+id/date_text"
+                app:layout_constraintTop_toTopOf="@+id/date_text" />
+
+            <TextView
+                android:id="@+id/visit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Visited Address"
+                android:theme="@style/normaltxt_12sp_Medium"
+                app:layout_constraintStart_toStartOf="@id/date_text"
+                app:layout_constraintTop_toBottomOf="@id/date_text" />
+
+            <TextView
+                android:id="@+id/addr_fordosage"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:text="H-146 / 147 , Sec-63, H-Block, Noida-201010"
+                android:textColor="@color/newblack"
+                app:layout_constraintEnd_toStartOf="@+id/textView222"
+                app:layout_constraintStart_toStartOf="@id/visit"
+                app:layout_constraintTop_toBottomOf="@id/visit" />
+
+            <TextView
+                android:id="@+id/textView222"
+                style="@style/normaltxt_11sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/addr_fordosage"
+                app:layout_constraintEnd_toEndOf="@+id/time_text"
+                app:layout_constraintTop_toTopOf="@+id/visit" />
+
+            <include
+                android:id="@+id/common_btn"
+                layout="@layout/common_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addr_fordosage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

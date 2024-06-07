@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.RateUs.RateUsActivity">
+
+    <include
+        android:id="@+id/rateToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/rating"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateToolbar" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:stepSize="1"
+        android:isIndicator="false"
+        android:theme="@style/foodRatingBar"
+        style="?android:attr/ratingBarStyleIndicator"
+        app:layout_constraintStart_toStartOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingbar"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/dp_5"-->
+<!--        android:theme="@style/foodRatingBar"-->
+<!--        android:stepSize="1"-->
+<!--        android:isIndicator="false"-->
+<!--        style="?android:attr/ratingBarStyleIndicator"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/rvitems"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/rvitems" />-->
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/rating"
+        app:layout_constraintStart_toEndOf="@+id/rating"
+        app:layout_constraintTop_toTopOf="@+id/rating" />
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="@string/write_your_review"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintStart_toStartOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ratebox"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="left"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/sp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:hint="@string/i_love_vaccine_buddy"
+        android:textColor="@color/newcolor"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView58"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <include
+        android:id="@+id/tvSubmit"
+        layout="@layout/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.FamilyMember.FamilyMemberActivity">
+
+    <include
+        android:id="@+id/scheduleToolbaar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/three_member_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleToolbaar" />
+
+
+    <TextView
+        android:id="@+id/textView145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="Member"
+        android:visibility="gone"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/three_member_view"
+        app:layout_constraintStart_toEndOf="@+id/three_member_view"
+        app:layout_constraintTop_toTopOf="@+id/three_member_view" />
+
+    <TextView
+        android:id="@+id/addmember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/gilroy_medium"
+        android:text="+ Add New Member"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="@+id/three_member_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/three_member_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyschedulCus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/three_member_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

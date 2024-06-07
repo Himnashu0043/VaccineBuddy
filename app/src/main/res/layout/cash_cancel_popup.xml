@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_newlock" />
+
+            <TextView
+                android:id="@+id/dialog_text"
+                style="@style/normaltxt_20sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:text="For cancellation less than two hours prior to scheduled vaccination, home visit charges of INR 500 will be applicable."
+                android:gravity="center_horizontal"
+                android:textColor="@color/newcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/dialogCashConfrom"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/common_btn_bg"
+                android:padding="@dimen/dp_10"
+                android:text="@string/confirm"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/dialog_text"
+                app:layout_constraintStart_toStartOf="@+id/dialog_text"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_text" />
+
+            <TextView
+                android:id="@+id/dialog_CAshcancel"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="@dimen/dp_10"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/dialogCashConfrom"
+                app:layout_constraintStart_toStartOf="@+id/dialogCashConfrom"
+                app:layout_constraintTop_toBottomOf="@+id/dialogCashConfrom" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

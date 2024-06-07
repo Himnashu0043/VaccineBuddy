@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".ui.view.Managers.BaseManager.ApplicationManager"
+        android:allowBackup="true"
+        android:icon="@drawable/circle_app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/rounded_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VaccineBuddy"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.view.activity.testimonialsDetails.TestimonialsDetailsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme"/>
+        <activity
+            android:name=".ui.view.activity.newOtp.NewOtpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_new_otp"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.HDFCPayment.Activity.PaymentStatusNewActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.HDFCPayment.Activity.CCAvenueNewActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_play_api" />
+
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.HDFCPayment.Activity.CCAvenueActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" /> <!-- <activity -->
+        <!-- android:name=".PaymentStatusActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:theme="@style/CustomTheme" /> -->
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Offer.OffersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.CustomePackage.CustomePackageActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ui.view.activity.SuggestAsPerBaby.SuggestAsPerBabyActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Location.SetLocationActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.MoreDetailsInfo.MoreDetailInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Slot.SlotActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.About.AboutActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+
+        <service
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.FireBase.MyFireBaseMessagingServices"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.EditAddress.EditAddressActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.EditFamilyMenber.EditFamilyMemberActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.PackageDetails.PackageDetailsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.EditProfile.EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.SecondChangePassword.SeconChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.VaccinationChart.VaccinationChartActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.SuggestAsPerBaby.SuggestAsPerBabyActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ScheduleForDose.ScheduleForDoseActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ScheduleHistory.ScheduleHistoryActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ScheduledCounsellingCall.ScheduledCounsellingCallActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.OrderDetails.OrderDetailsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Package.PackageActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.SubCategory.SubCategoryActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ChooseVaccine.ChooseVaccineBabyActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AddressSecond.SecondAddressActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.VaccineDetails.VaccineDetailsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.KidsGrowth.KidsGrowthRecordActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.VaccinationRecord.VaccinationRecordActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/payment_key" />
+
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.FamilyMember.FamilyMemberActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AddNewAddress"
+            android:exported="false"
+            android:theme="@style/CustomTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ContactUs.ContactUsActivtity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AddFamilyMember"
+            android:exported="false"
+            android:theme="@style/CustomTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.MyProfileActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.RateUs.RateUsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.WishlistActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.CreatePackageActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.VaccinationScheduleChart"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.InfoProcedingActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AddressActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.FillInformationActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Kids.KidsActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AllCategories.AllCategoriesActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ScheduleingConsolling.Schedule_Counseling"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.CreatePasswordActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.VerificationActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.AccountCreateActivity"
+            android:exported="false"
+            android:theme="@style/myTest" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.ChangePasswordActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.PhoneVerifyActivity"
+            android:exported="true"
+            android:theme="@style/mysoft">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.forgotPassword"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.Walkthrough.TourActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.SplashFullScreen" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.MyCart.MyCartActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.MyProfile.MainProfileActivity"
+            android:exported="false"
+            android:theme="@style/CustomTheme" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.Helper.TakeImageWithCrop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.VB_Healthtech_Pvt_Ltd.Vaccine_Buddy.ui.view.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="VB_Healthtech_Pvt_Ltd.Vaccine_Budd.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

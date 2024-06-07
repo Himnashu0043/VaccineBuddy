@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvPackageName"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_horizontal"
+                android:lineHeight="@dimen/dp_24"
+                android:text="Thank you for showing your\n interest in vaccine buddy!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvcomm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:lineHeight="@dimen/dp_20"
+                android:text="would you like to complete\n your profile?"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/tvPackageName"
+                app:layout_constraintStart_toStartOf="@+id/tvPackageName"
+                app:layout_constraintTop_toBottomOf="@+id/tvPackageName" />
+
+            <TextView
+                android:id="@+id/tvcont"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="Continue"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintBottom_toBottomOf="@+id/divider27"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider27"
+                app:layout_constraintTop_toTopOf="@+id/divider27" />
+
+            <View
+                android:id="@+id/divider26"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/newblack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvcomm" />
+
+            <TextView
+                android:id="@+id/mayBelater"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="May be later"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintBottom_toBottomOf="@+id/divider27"
+                app:layout_constraintEnd_toStartOf="@+id/divider27"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/divider27" />
+
+            <View
+                android:id="@+id/divider27"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/newblack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider26" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

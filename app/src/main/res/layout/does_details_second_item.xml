@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout25"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAgeOfBirth"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Age of Baby"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvInsuions"
+            app:layout_constraintStart_toEndOf="@+id/tvAgeOfBirth"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInsuions"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Inclusions"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAgeOfBirth"
+            app:layout_constraintEnd_toStartOf="@+id/divider8"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toTopOf="@+id/tvAgeOfBirth" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/divider4"
+            app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+            app:layout_constraintStart_toEndOf="@+id/tvInsuions"
+            app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInsuions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider8"
+            app:layout_constraintTop_toTopOf="@+id/tvInsuions" />
+
+
+        <!--
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider4"
+                    app:layout_constraintEnd_toStartOf="@+id/textView200"
+                    app:layout_constraintStart_toEndOf="@+id/tvInsuions"
+                    app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+                <TextView
+                    android:id="@+id/textView200"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="ABC, ABC, ABC"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider6"
+                    app:layout_constraintStart_toEndOf="@+id/divider5"
+                    app:layout_constraintTop_toTopOf="@+id/tvInsuions" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider5"
+                    app:layout_constraintEnd_toStartOf="@+id/textView201"
+                    app:layout_constraintStart_toEndOf="@+id/textView200"
+                    app:layout_constraintTop_toTopOf="@+id/divider5"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView201"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="03 July '22"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider7"
+                    app:layout_constraintStart_toEndOf="@+id/divider6"
+                    app:layout_constraintTop_toTopOf="@+id/textView200" />
+
+                <TextView
+                    android:id="@+id/textView2011"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="45343564"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toEndOf="@+id/divider7"
+                    app:layout_constraintTop_toTopOf="@+id/textView201" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider6"
+                    app:layout_constraintEnd_toStartOf="@+id/textView2011"
+                    app:layout_constraintStart_toEndOf="@+id/textView201"
+                    app:layout_constraintTop_toTopOf="@+id/divider6" />
+        -->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView40"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:layout_marginBottom="4dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/tvStatus"-->
+        <!--            app:layout_constraintHorizontal_bias="0.468"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/tvStatus"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tvStatus"-->
+        <!--            app:srcCompat="@drawable/ic_group_73378" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout251"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout25">
+
+        <TextView
+            android:id="@+id/tvAgeOfBirth1"
+            style="@style/normaltxt_10sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider41"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvInsuions1"
+            app:layout_constraintStart_toEndOf="@+id/tvAgeOfBirth1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInsuions1"
+            style="@style/normaltxt_10sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAgeOfBirth1"
+            app:layout_constraintEnd_toStartOf="@+id/divider81"
+            app:layout_constraintStart_toEndOf="@+id/divider41"
+            app:layout_constraintTop_toTopOf="@+id/tvAgeOfBirth1" />
+
+        <View
+            android:id="@+id/divider81"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/divider41"
+            app:layout_constraintEnd_toStartOf="@+id/tvStatus1"
+            app:layout_constraintStart_toEndOf="@+id/tvInsuions1"
+            app:layout_constraintTop_toTopOf="@+id/divider41" />
+
+        <TextView
+            android:id="@+id/tvStatus1"
+            style="@style/normaltxt_10sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInsuions1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider81"
+            app:layout_constraintTop_toTopOf="@+id/tvInsuions1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/vaccination_done"
+        style="@style/normaltxt_12sp_Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="16dp"
+        android:text="Vaccination will be done by"
+        android:textColor="@color/newcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout251" />
+
+    <TextView
+        android:id="@+id/tvVaccinationDoneBy"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:textColor="@color/newblack"
+        app:layout_constraintEnd_toStartOf="@+id/textView221"
+        app:layout_constraintStart_toStartOf="@id/vaccination_done"
+        app:layout_constraintTop_toBottomOf="@id/vaccination_done" />
+
+    <TextView
+        android:id="@+id/visited_addr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:text="Visited Address"
+        android:textColor="@color/newcolor"
+        style="@style/normaltxt_12sp_Medium"
+        app:layout_constraintStart_toStartOf="@id/tvVaccinationDoneBy"
+        app:layout_constraintTop_toBottomOf="@id/tvVaccinationDoneBy" />
+
+    <TextView
+        android:id="@+id/tvVisitAddress"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/newblack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView221"
+        app:layout_constraintStart_toStartOf="@id/visited_addr"
+        app:layout_constraintTop_toBottomOf="@id/visited_addr" />
+
+    <TextView
+        android:id="@+id/textView221"
+        style="@style/normaltxt_11sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        android:text="Download Certificate"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/tvVaccinationDoneBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vaccination_done" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.ContactUs.ContactUsActivtity">
+
+    <include layout="@layout/common_toolbar"
+        android:id="@+id/contactToolbar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/common_white_bg"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactToolbar">
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/contact_img"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/vaccine_buddy_pvt_ltd"
+            android:textColor="@color/black"
+            style="@style/normaltxt_18sp_bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView42"
+            app:layout_constraintHorizontal_bias="0.447"
+            app:layout_constraintStart_toStartOf="@+id/imageView42"
+            app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="C-104 Sector 65"
+            style="@style/normaltxt_14sp_Regular"
+            app:layout_constraintEnd_toEndOf="@+id/textView87"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/textView87"
+            app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="63, Noida , Uttar Pradesh 201301"
+            style="@style/normaltxt_12sp_Regular"
+            app:layout_constraintEnd_toEndOf="@+id/textView88"
+            app:layout_constraintStart_toStartOf="@+id/textView88"
+            app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/company_number"
+            style="@style/normaltxt_14sp_Medium"
+            android:textColor="@color/newcolor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView88"
+           />
+
+        <TextView
+            android:id="@+id/textView91"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="91-9650039988"
+            app:layout_constraintStart_toStartOf="@+id/textView90"
+            app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+        <TextView
+            android:id="@+id/textView92"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Company Email"
+            android:textColor="@color/newcolor"
+            app:layout_constraintEnd_toEndOf="@+id/textView91"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+        <TextView
+            android:id="@+id/textView93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/normaltxt_14sp_Medium"
+            android:text="Company Website"
+            android:textColor="@color/newcolor"
+            app:layout_constraintStart_toStartOf="@+id/textView94"
+            app:layout_constraintTop_toBottomOf="@+id/divider12" />
+
+        <TextView
+            android:id="@+id/textView94"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:text="info@vaccine-buddy.com"
+            app:layout_constraintEnd_toStartOf="@+id/imageView44"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView92"
+            app:layout_constraintTop_toBottomOf="@+id/textView92" />
+
+        <TextView
+            android:id="@+id/textView95"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="30dp"
+            android:text="https://www.vaccine-buddy.com/"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView45"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView93"
+            app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@+id/textView91"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView90"
+            app:srcCompat="@drawable/ic_company_name"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@+id/textView94"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView92"
+            app:srcCompat="@drawable/ic_company_email"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView45"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_4"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView95"
+            app:layout_constraintEnd_toEndOf="@+id/imageView44"
+            app:layout_constraintTop_toTopOf="@+id/textView93"
+            app:srcCompat="@drawable/ic_company_site"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="@+id/imageView43"
+            app:layout_constraintStart_toStartOf="@+id/textView91"
+            app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="@+id/imageView44"
+            app:layout_constraintStart_toStartOf="@+id/textView94"
+            app:layout_constraintTop_toBottomOf="@+id/textView94" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

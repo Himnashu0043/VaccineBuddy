@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/dialog_poup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="117dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_layer_2" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="152dp"
+            android:layout_height="@dimen/dp_28"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="74dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/sorry"
+            android:textAlignment="center"
+            android:textColor="@color/newcolor"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_42"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="27dp"
+            android:fontFamily="@font/gilroy_regular"
+            android:gravity="center"
+            android:text="@string/you_are_not_eligible_for_this_package_please_create_your_own_custom_package"
+            android:textColor="@color/darknavyblue"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_46"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btncolor"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="@string/suggest_as_per_my_baby_age"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_14"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

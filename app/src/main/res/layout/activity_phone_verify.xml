@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.PhoneVerifyActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_lock" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/gilroy_bold"
+        android:text="Verification"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_24"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:text="@string/verification_view"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/tvphoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/gilroy_regular"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView229"
+        style="@style/normaltxt_14sp_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Edit"
+        android:textColor="@color/darknavyblue2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvphoneNumber"
+        app:layout_constraintStart_toEndOf="@+id/tvphoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/tvphoneNumber" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView17"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:fontFamily="@font/gilroy_regular"-->
+    <!--        android:text="@string/not_receive_code"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="@dimen/sp_14"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/editTextNumber6"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/editTextNumber1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />-->
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/firstPinView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_50"
+        android:state_enabled="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:cursorColor="@color/darknavyblue"
+        app:cursorVisible="false"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:inputType="number"
+        app:itemSpacing="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvphoneNumber"
+        app:password="false"
+        app:pinBackground="@drawable/opt_bg"
+        app:pinHeight="@dimen/dp_35"
+        app:pinLength="6"
+        app:pinWidth="@dimen/dp_35"
+        />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Himann"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout29"
+        app:layout_constraintEnd_toEndOf="@+id/firstPinView1"
+        app:layout_constraintStart_toStartOf="@+id/firstPinView1" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/firstPinView1"
+        app:layout_constraintStart_toStartOf="@+id/firstPinView1"
+        app:layout_constraintTop_toBottomOf="@+id/firstPinView1">
+
+        <TextView
+            android:id="@+id/textView105"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive a code?"
+            android:textColor="@color/newblack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResend"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:padding="@dimen/dp_2"
+            android:text="Resend"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="@+id/textView105"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView105"
+            app:layout_constraintTop_toTopOf="@+id/textView105" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <!-- <com.chaos.view.PinView
+        android:id="@+id/firstPinView1"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="@drawable/opt_bg"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:cursorWidth="2dp"
+        app:itemCount="6"
+        app:itemHeight="@dimen/dp_35"
+        app:itemRadius="4dp"
+        app:itemSpacing="@dimen/dp_20"
+        app:itemWidth="@dimen/dp_35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView229"
+        app:viewType="none">
+
+        <requestFocus />
+    </com.chaos.view.PinView>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout30"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:visibility="gone"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView229">
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/one"
+            app:layout_constraintEnd_toStartOf="@+id/three"
+            app:layout_constraintStart_toEndOf="@+id/one"
+            app:layout_constraintTop_toTopOf="@+id/one" />
+
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/two"
+            app:layout_constraintEnd_toStartOf="@+id/four"
+            app:layout_constraintStart_toEndOf="@+id/two"
+            app:layout_constraintTop_toTopOf="@+id/two" />
+
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/three"
+            app:layout_constraintEnd_toStartOf="@+id/five"
+            app:layout_constraintStart_toEndOf="@+id/three"
+            app:layout_constraintTop_toTopOf="@+id/three" />
+
+        <EditText
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/four"
+            app:layout_constraintEnd_toStartOf="@+id/six"
+            app:layout_constraintStart_toEndOf="@+id/four"
+            app:layout_constraintTop_toTopOf="@+id/four" />
+
+        <EditText
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edittext_otp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/five"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/five"
+            app:layout_constraintTop_toTopOf="@+id/five" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:id="@+id/btn"
+        layout="@layout/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/firstPinView1"
+        app:layout_constraintStart_toStartOf="@+id/firstPinView1"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout29" />
+</androidx.constraintlayout.widget.ConstraintLayout>

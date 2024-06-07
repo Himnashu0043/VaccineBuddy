@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.EditProfile.EditProfileActivity">
+
+    <include
+        android:id="@+id/edit_toobar"
+        layout="@layout/common_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_toobar">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView38"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:visibility="visible"
+            android:src="@drawable/rounded_app_icon"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dummy_img"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="22dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+            app:layout_constraintEnd_toEndOf="@+id/imageView38"
+            app:layout_constraintStart_toStartOf="@+id/imageView38"
+            app:layout_constraintTop_toTopOf="@+id/imageView38"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/normaltxt_20spMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/shubham_jain"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView38"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView62"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/sjhw6512_gmail_com"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/editButton"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="@dimen/dp_73"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_btn_shape"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/textView62"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView62" />
+
+        <ImageView
+            android:id="@+id/imageView69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+            app:layout_constraintStart_toStartOf="@+id/imageView38"
+            app:srcCompat="@drawable/ic_camera" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout21">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_under_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableEnd="@drawable/ic_person"
+                android:drawablePadding="@dimen/dp_8"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="center_vertical"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/mailEdit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawablePadding="@dimen/dp_24"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="center_vertical"
+                android:hint="Enter Email"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="@+id/nameEdit"
+                app:layout_constraintStart_toStartOf="@+id/nameEdit"
+                app:layout_constraintTop_toBottomOf="@id/nameEdit" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cos_lay"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/layout_view_shape"
+                app:layout_constraintEnd_toEndOf="@+id/mailEdit"
+                app:layout_constraintStart_toStartOf="@+id/mailEdit"
+                app:layout_constraintTop_toBottomOf="@id/mailEdit">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryPicker"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:visibility="gone"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_showFlag="true"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/testt"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_46"
+                    android:text="+ 91"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/phoneEdit"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/layout_view_shape"
+                    android:clickable="false"
+                    android:drawableEnd="@drawable/ic_newcall"
+                    android:drawablePadding="@dimen/dp_24"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:hint="9999999999"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/testt"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/dobEdit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableEnd="@drawable/cal_img"
+                android:drawablePadding="@dimen/dp_24"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="center_vertical"
+                android:hint="04-june-1999"
+                android:paddingLeft="@dimen/dp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:paddingEnd="@dimen/dp_16"
+                app:layout_constraintEnd_toEndOf="@+id/cos_lay"
+                app:layout_constraintStart_toStartOf="@+id/cos_lay"
+                app:layout_constraintTop_toBottomOf="@id/cos_lay" />
+
+            <Spinner
+                android:id="@+id/gender"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_13"
+                android:background="@drawable/cus_sp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_10"
+                android:popupBackground="@drawable/spinner_dropdown_newitem"
+                app:layout_constraintEnd_toEndOf="@id/dobEdit"
+                app:layout_constraintStart_toStartOf="@id/dobEdit"
+                app:layout_constraintTop_toBottomOf="@id/dobEdit" />
+
+            <EditText
+                android:id="@+id/lactose"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_13"
+                android:background="@drawable/layout_view_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/allergies_amp_medical_conditions"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@id/gender"
+                app:layout_constraintStart_toStartOf="@id/gender"
+                app:layout_constraintTop_toBottomOf="@id/gender" />
+
+            <include
+                android:id="@+id/common_btn"
+                layout="@layout/common_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/lactose"
+                app:layout_constraintStart_toStartOf="@+id/lactose"
+                app:layout_constraintTop_toBottomOf="@+id/lactose" />
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageView67"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="40dp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:src="@drawable/ic_newdropdown"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/phoneEdit"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/phoneEdit"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/phoneEdit" />-->
+
+            <!--            <View-->
+            <!--                android:id="@+id/divider13"-->
+            <!--                android:layout_width="1dp"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:layout_marginBottom="8dp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:background="?android:attr/listDivider"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/phoneEdit"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/imageView67"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/phoneEdit" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.fragment.MyOrderFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/order_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/drawable_white_stroke_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView193"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginLeft="@dimen/dp_1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Current"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView194"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView194"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="Completed"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView193"
+                app:layout_constraintEnd_toStartOf="@+id/textView195"
+                app:layout_constraintStart_toEndOf="@+id/textView193"
+                app:layout_constraintTop_toTopOf="@+id/textView193" />
+
+            <TextView
+                android:id="@+id/textView195"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="@dimen/dp_1"
+                android:gravity="center"
+                android:text="Cancelled"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView194"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView194"
+                app:layout_constraintTop_toTopOf="@+id/textView194"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/seach"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/search_ed"
+        android:drawableEnd="@drawable/ic_search_img"
+        android:drawablePadding="@dimen/dp_16"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+
+        android:singleLine="true"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout22" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyorder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seach" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ivwhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_24"
+        app:cardCornerRadius="@dimen/dp_50"
+        app:cardElevation="@dimen/dp_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/whatsapp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.AccountCreateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".ui.view.activity.AccountCreateActivity">
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/constraintLayout34"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_80"-->
+<!--                android:background="@drawable/bottom_layout"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <TextView-->
+<!--                    style="@style/normaltxt_16sp_bold"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Complete your profile"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ic_back"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="74dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:srcCompat="@drawable/new_logo" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/create_your_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_24"
+                app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                app:layout_constraintStart_toStartOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="49dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:gravity="center_horizontal"
+                android:text="@string/sign_up_to_browse_online_medicine_near_by_location"
+                android:textColor="@color/newcolor"
+                android:textSize="@dimen/dp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_32"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameview"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_user"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:maxLength="50">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_32"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ed_Name"
+                app:layout_constraintStart_toStartOf="@+id/ed_Name"
+                app:layout_constraintTop_toBottomOf="@id/ed_Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailview"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_email"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:visibility="gone"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/ed_Email"
+                app:layout_constraintStart_toEndOf="@+id/ed_phonetttt"
+                app:layout_constraintTop_toBottomOf="@id/ed_Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneview"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableEnd="@drawable/ic_newcall"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:singleLine="true">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_phonetttt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/ed_phone"
+                app:layout_constraintEnd_toStartOf="@+id/ed_phone"
+                app:layout_constraintStart_toStartOf="@+id/ed_Email"
+                app:layout_constraintTop_toTopOf="@+id/ed_phone">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_49"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:background="@drawable/black_stroke_white_bg"
+                    android:gravity="center_vertical"
+                    app:ccp_contentColor="@color/newblack"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/ed_Email"
+                    app:layout_constraintTop_toTopOf="@+id/ed_phone" />
+                <!--                <com.google.android.material.textfield.TextInputEditText-->
+                <!--                    android:id="@+id/phoneview"-->
+                <!--                    style="@style/normaltxt_14sp_Regular"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:drawableEnd="@drawable/ic_newcall"-->
+                <!--                    android:hint="@string/phone_number"-->
+                <!--                    android:inputType="phone"-->
+                <!--                    android:maxLength="10"-->
+                <!--                    android:paddingLeft="@dimen/dp_16"-->
+                <!--                    android:paddingRight="@dimen/dp_16"-->
+                <!--                    android:singleLine="true">-->
+
+                <!--                </com.google.android.material.textfield.TextInputEditText>-->
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countryCodePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@drawable/black_stroke_white_bg"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                app:ccp_contentColor="@color/newblack"
+                app:ccp_defaultNameCode="IN"
+                app:ccp_showFlag="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/ed_Email"
+                app:layout_constraintTop_toTopOf="@+id/ed_phone" />
+
+            <TextView
+                android:id="@+id/Dob"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/dp_32"
+                android:background="@drawable/black_stroke_white_bg"
+                android:drawableEnd="@drawable/cal_img"
+                android:gravity="center_vertical"
+                android:hint="@string/dob"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:textColor="@color/newblack"
+                app:hintTextColor="@color/grey"
+                app:layout_constraintEnd_toEndOf="@id/ed_phone"
+                app:layout_constraintStart_toStartOf="@id/ed_phonetttt"
+                app:layout_constraintTop_toBottomOf="@id/ed_phone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_Gender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_55"
+                android:layout_marginTop="@dimen/dp_8"
+                android:hint="Gender"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:hintTextColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/Dob"
+                app:layout_constraintStart_toStartOf="@+id/Dob"
+                app:layout_constraintTop_toBottomOf="@id/Dob">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_Gender"
+                    style="@style/normaltxt_14sp_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_32"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/ed_Gender"
+                app:layout_constraintEnd_toEndOf="@id/ed_Gender"
+                app:layout_constraintStart_toStartOf="@id/ed_Gender"
+                app:layout_constraintTop_toTopOf="@+id/ed_Gender" />
+
+
+            <!--  <EditText
+                  android:id="@+id/nameviewq"
+                  style="@style/normaltxt_14sp_Regular"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/dp_46"
+                  android:layout_marginStart="@dimen/dp_32"
+                  android:layout_marginTop="@dimen/dp_16"
+                  android:layout_marginEnd="@dimen/dp_32"
+                  android:background="@drawable/black_stroke_white_bg"
+                  android:drawableEnd="@drawable/ic_user"
+                  android:hint="@string/full_name"
+                  android:maxLength="30"
+                  android:paddingLeft="@dimen/dp_16"
+                  android:paddingRight="@dimen/dp_16"
+                  android:singleLine="true"
+                  android:textColor="@color/newblack"
+                  android:visibility="gone"
+                  app:hintTextColor="@color/grey"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/textView10">
+
+
+              </EditText>
+
+              &lt;!&ndash;            <EditText&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/emailview"&ndash;&gt;
+              &lt;!&ndash;                style="@style/normaltxt_14sp_Regular"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="@dimen/dp_46"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/black_stroke_white_bg"&ndash;&gt;
+              &lt;!&ndash;                android:drawableEnd="@drawable/ic_email"&ndash;&gt;
+              &lt;!&ndash;                android:hint="@string/email"&ndash;&gt;
+              &lt;!&ndash;                android:maxLength="30"&ndash;&gt;
+              &lt;!&ndash;                android:paddingLeft="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:paddingRight="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:singleLine="true"&ndash;&gt;
+              &lt;!&ndash;                android:textColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                app:hintTextColor="@color/grey"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintEnd_toEndOf="@id/nameview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toStartOf="@id/nameview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/nameview" />&ndash;&gt;
+
+
+              &lt;!&ndash;            <EditText&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/phoneview"&ndash;&gt;
+              &lt;!&ndash;                style="@style/normaltxt_14sp_Regular"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="@dimen/dp_46"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginStart="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/black_stroke_white_bg"&ndash;&gt;
+              &lt;!&ndash;                android:drawableEnd="@drawable/ic_newcall"&ndash;&gt;
+              &lt;!&ndash;                android:hint="@string/phone_number"&ndash;&gt;
+              &lt;!&ndash;                android:inputType="phone"&ndash;&gt;
+              &lt;!&ndash;                android:maxLength="10"&ndash;&gt;
+              &lt;!&ndash;                android:paddingLeft="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:paddingRight="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:singleLine="true"&ndash;&gt;
+              &lt;!&ndash;                android:textColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                app:hintTextColor="@color/grey"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintEnd_toEndOf="@id/emailview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toEndOf="@+id/countryCodePicker"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/emailview" />&ndash;&gt;
+
+              &lt;!&ndash;            <com.hbb20.CountryCodePicker&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/countryCodePicker"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="0dp"&ndash;&gt;
+              &lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;
+              &lt;!&ndash;                app:ccp_defaultNameCode="IN"&ndash;&gt;
+              &lt;!&ndash;                app:ccp_showFlag="false"&ndash;&gt;
+              &lt;!&ndash;                app:ccp_showNameCode="false"&ndash;&gt;
+              &lt;!&ndash;                app:ccp_textSize="14sp"&ndash;&gt;
+              &lt;!&ndash;                app:ccp_contentColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/black_stroke_white_bg"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintBottom_toBottomOf="@+id/phoneview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toStartOf="@+id/emailview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toTopOf="@+id/phoneview" />&ndash;&gt;
+
+              &lt;!&ndash;            <TextView&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/Dob"&ndash;&gt;
+              &lt;!&ndash;                style="@style/normaltxt_14sp_Regular"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="@dimen/dp_46"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginStart="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginEnd="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/black_stroke_white_bg"&ndash;&gt;
+              &lt;!&ndash;                android:drawableEnd="@drawable/cal_img"&ndash;&gt;
+              &lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;
+              &lt;!&ndash;                android:hint="@string/dob"&ndash;&gt;
+              &lt;!&ndash;                android:paddingLeft="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:paddingRight="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:textColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                app:hintTextColor="@color/grey"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintEnd_toEndOf="@id/phoneview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toStartOf="@id/phoneview"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/phoneview" />&ndash;&gt;
+
+
+              &lt;!&ndash;            <Spinner&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/gender"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="@dimen/dp_46"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginStart="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginEnd="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/black_strock_spinner_bg_white"&ndash;&gt;
+              &lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;
+              &lt;!&ndash;                android:paddingLeft="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:popupBackground="@drawable/spinner_dropdown_newitem"&ndash;&gt;
+              &lt;!&ndash;                android:textColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintEnd_toEndOf="@id/Dob"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toStartOf="@id/Dob"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/Dob" />&ndash;&gt;
+
+              &lt;!&ndash;            <EditText&ndash;&gt;
+              &lt;!&ndash;                android:id="@+id/referal"&ndash;&gt;
+              &lt;!&ndash;                style="@style/normaltxt_14sp_Regular"&ndash;&gt;
+              &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;
+              &lt;!&ndash;                android:layout_height="@dimen/dp_46"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginStart="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;
+              &lt;!&ndash;                android:layout_marginEnd="@dimen/dp_32"&ndash;&gt;
+              &lt;!&ndash;                android:background="@drawable/layout_view_shape"&ndash;&gt;
+              &lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;
+              &lt;!&ndash;                android:hint="@string/referralCode"&ndash;&gt;
+              &lt;!&ndash;                android:paddingLeft="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:paddingRight="@dimen/dp_16"&ndash;&gt;
+              &lt;!&ndash;                android:singleLine="true"&ndash;&gt;
+              &lt;!&ndash;                android:visibility="gone"&ndash;&gt;
+              &lt;!&ndash;                android:textColor="@color/newblack"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintEnd_toEndOf="@id/gender"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintStart_toStartOf="@id/gender"&ndash;&gt;
+              &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/gender" />&ndash;&gt;
+
+  -->
+            <EditText
+                android:id="@+id/referal"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginStart="@dimen/dp_32"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/dp_32"
+                android:background="@drawable/layout_view_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/referralCode"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/newblack"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/gender"
+                app:layout_constraintStart_toStartOf="@id/gender"
+                app:layout_constraintTop_toBottomOf="@id/gender" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="8dp"
+                android:buttonTint="@color/skyblue"
+                android:checked="false"
+                app:layout_constraintStart_toStartOf="@+id/ed_Gender"
+                app:layout_constraintTop_toBottomOf="@+id/referal" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/check_line_sign"
+                app:layout_constraintEnd_toEndOf="@+id/ed_Gender"
+                app:layout_constraintStart_toEndOf="@+id/checkBox"
+                app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lay_term_policy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                <TextView
+                    android:id="@+id/textView86"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/to_our_terms_amp_policy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTerm"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:gravity="left"
+                    android:text="@string/term"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView86"
+                    app:layout_constraintStart_toEndOf="@+id/textView86"
+                    app:layout_constraintTop_toTopOf="@+id/textView86" />
+
+                <TextView
+                    android:id="@+id/tvPrivate"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:gravity="left"
+                    android:text="@string/policy"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvTerm"
+                    app:layout_constraintStart_toEndOf="@+id/tvTerm"
+                    app:layout_constraintTop_toTopOf="@+id/tvTerm" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <CheckBox
+                android:id="@+id/vacctine_checkBox"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:buttonTint="@color/skyblue"
+                android:checked="false"
+                app:layout_constraintStart_toStartOf="@+id/checkBox"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+            <TextView
+                android:id="@+id/textView111"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="By clicking on this , you agree to Home Vaccination"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/vacctine_checkBox" />
+
+            <include
+                android:id="@+id/btn"
+                layout="@layout/common_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                app:layout_constraintEnd_toEndOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/vacctine_checkBox" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/normaltxt_16sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/btncolor"
+                android:text="@string/signup"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/checkBox"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn"
+                app:layout_constraintStart_toStartOf="@+id/btn"
+                app:layout_constraintTop_toBottomOf="@+id/btn">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:gravity="center"
+                    android:text="@string/bottom_msg_in_sign_up"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/loginID"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/login_in_sign"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textView12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

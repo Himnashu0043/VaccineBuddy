@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginRight="@dimen/dp_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:background="@drawable/common_white_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Yash Verma"
+            android:textColor="@color/newcolor"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toStartOf="@+id/ivEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:src="@drawable/ic_edit_img"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView64"
+            app:layout_constraintEnd_toStartOf="@id/imageView64"
+            app:layout_constraintTop_toTopOf="@+id/imageView64" />
+
+        <ImageView
+            android:id="@+id/imageView64"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:theme="@style/normaltxt_12sp_bold"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@id/age"
+            app:layout_constraintTop_toBottomOf="@id/age" />
+
+
+        <TextView
+            android:id="@+id/textView147"
+            style="@style/normaltxt_12sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/age"
+            app:layout_constraintEnd_toStartOf="@+id/textviewdob"
+            app:layout_constraintStart_toEndOf="@+id/age" />
+
+        <TextView
+            android:id="@+id/tvgender"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/textView147"
+            app:layout_constraintStart_toStartOf="@id/textView147"
+            app:layout_constraintTop_toBottomOf="@id/textView147" />
+
+        <TextView
+            android:id="@+id/textviewdob"
+            style="@style/normaltxt_12sp_bold"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/sp_16"
+            android:text="DOB"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView147"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/dobtext"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="right"
+
+            app:layout_constraintEnd_toEndOf="@id/textviewdob"
+            app:layout_constraintTop_toBottomOf="@id/textviewdob" />
+
+        <TextView
+            android:id="@+id/relationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="Relation"
+            android:theme="@style/normaltxt_12sp_bold"
+            app:layout_constraintStart_toStartOf="@id/tvAge"
+            app:layout_constraintTop_toBottomOf="@id/tvAge" />
+
+        <TextView
+            android:id="@+id/relationtext2"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="@id/relationText"
+            app:layout_constraintTop_toBottomOf="@id/relationText" />
+
+        <TextView
+            android:id="@+id/alergiesview"
+            style="@style/normaltxt_12sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:gravity="right"
+            android:text="Allergies &amp; Medical Conditions"
+            app:layout_constraintEnd_toEndOf="@id/dobtext"
+            app:layout_constraintStart_toEndOf="@+id/relationText"
+            app:layout_constraintTop_toBottomOf="@id/dobtext" />
+
+        <TextView
+            android:id="@+id/lactose_intolerent"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="right"
+            android:paddingBottom="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="@+id/relationtext2"
+            app:layout_constraintEnd_toEndOf="@id/alergiesview"
+            app:layout_constraintTop_toBottomOf="@id/alergiesview" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload_chat_btn"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pink_gradient_bg"
+            android:drawableEnd="@drawable/ic_pdf_svgrepo_com"
+            android:elevation="@dimen/dp_14"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="16dp"
+            android:text="Uploaded Vaccination chart"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:textColor="@color/pink"
+            app:layout_constraintEnd_toEndOf="@+id/lactose_intolerent"
+            app:layout_constraintStart_toStartOf="@+id/relationtext2"
+            app:layout_constraintTop_toBottomOf="@+id/relationtext2" />
+
+        <TextView
+            android:id="@+id/previous_dosageview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="Any Reaction with previous Dosage"
+            android:theme="@style/normaltxt_12sp_Semibold"
+            app:layout_constraintStart_toStartOf="@+id/relationText"
+            app:layout_constraintTop_toBottomOf="@id/upload_chat_btn" />
+
+        <TextView
+            android:id="@+id/na"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/child"
+            app:layout_constraintEnd_toEndOf="@+id/alergiesview"
+            app:layout_constraintStart_toStartOf="@id/previous_dosageview"
+            app:layout_constraintTop_toBottomOf="@id/previous_dosageview" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/child"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lactose_intolerent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/relationtext2"
+            app:layout_constraintTop_toBottomOf="@+id/na"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/babybirthview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Baby's Birth History"
+                android:textColor="@color/newcolor"
+                android:theme="@style/normaltxt_16sp_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/deliveryview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="Delivery"
+                android:theme="@style/normaltxt_12sp_Semibold"
+                app:layout_constraintStart_toStartOf="@id/babybirthview"
+                app:layout_constraintTop_toBottomOf="@id/babybirthview" />
+
+            <TextView
+                android:id="@+id/tvdelivery"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@id/deliveryview"
+                app:layout_constraintTop_toBottomOf="@id/deliveryview" />
+
+            <TextView
+                android:id="@+id/seizuresview"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Any Seizures at Birth"
+                app:layout_constraintBaseline_toBaselineOf="@+id/deliveryview"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/yesview"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                app:layout_constraintEnd_toEndOf="@id/seizuresview"
+                app:layout_constraintTop_toBottomOf="@id/seizuresview" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_chat_btn2"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dp_18"
+                android:background="@drawable/blue_gradient_bg"
+                android:drawableEnd="@drawable/ic_blue_pdf"
+                android:elevation="@dimen/dp_14"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="16dp"
+                android:text="NICU Records"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                android:textColor="@color/darknavyblue2"
+                app:layout_constraintEnd_toEndOf="@+id/seizuresview"
+                app:layout_constraintStart_toStartOf="@+id/babybirthview"
+                app:layout_constraintTop_toBottomOf="@id/tvdelivery" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_chat_btn3"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_18"
+                android:background="@drawable/yellow_gradient_bg"
+                android:drawableEnd="@drawable/ic_yellow_pdf"
+                android:elevation="@dimen/dp_14"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="16dp"
+                android:text="Birth History:"
+                android:textAllCaps="false"
+                android:textColor="@color/orange"
+
+                app:layout_constraintEnd_toEndOf="@+id/seizuresview"
+                app:layout_constraintStart_toStartOf="@+id/babybirthview"
+                app:layout_constraintTop_toBottomOf="@id/upload_chat_btn2" />
+
+            <TextView
+                android:id="@+id/textView206"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Any Medical Disorder at time of Birth"
+                app:layout_constraintStart_toStartOf="@+id/deliveryview"
+                app:layout_constraintTop_toBottomOf="@+id/upload_chat_btn3" />
+
+            <TextView
+                android:id="@+id/tvmedicalDisorder"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/newblack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/seizuresview"
+                app:layout_constraintStart_toStartOf="@+id/textView206"
+                app:layout_constraintTop_toBottomOf="@+id/textView206" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.VaccinationChart.VaccinationChartActivity">
+
+    <include
+        android:id="@+id/vaccinechartToolbar"
+        layout="@layout/common_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccinechartToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/baby_ageTextview"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="Select Family Member"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvMember"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/layout_view_shape"
+                android:drawableRight="@drawable/ic_newdropdown"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/baby_ageTextview"
+                app:layout_constraintTop_toBottomOf="@+id/baby_ageTextview" />
+
+            <Spinner
+                android:id="@+id/memberSpinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/tvMember"
+                app:layout_constraintStart_toStartOf="@+id/tvMember"
+                app:layout_constraintTop_toTopOf="@+id/tvMember" />
+
+
+            <TextView
+                android:id="@+id/dob_babyage"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Date of Birth"
+                app:layout_constraintStart_toStartOf="@id/tvMember"
+                app:layout_constraintTop_toBottomOf="@id/tvMember" />
+
+
+            <EditText
+                android:id="@+id/dobview_babyage"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:background="@drawable/layout_view_shape"
+                android:clickable="false"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="Date of Biths"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toStartOf="@+id/ageview_babyge"
+                app:layout_constraintStart_toStartOf="@id/dob_babyage"
+                app:layout_constraintTop_toBottomOf="@id/dob_babyage" />
+
+
+            <TextView
+                android:id="@+id/age_babyage"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="68dp"
+                android:text="Age"
+                app:layout_constraintBottom_toBottomOf="@id/dob_babyage"
+                app:layout_constraintEnd_toEndOf="@+id/tvMember"
+                app:layout_constraintTop_toTopOf="@id/dob_babyage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ageview_babyge"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:background="@drawable/layout_view_shape"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="age"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintBottom_toBottomOf="@+id/dobview_babyage"
+                app:layout_constraintEnd_toEndOf="@+id/tvMember"
+                app:layout_constraintStart_toStartOf="@id/age_babyage"
+                app:layout_constraintTop_toTopOf="@+id/dobview_babyage" />
+
+            <TextView
+                android:id="@+id/relation_babyage"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Relation"
+                app:layout_constraintStart_toStartOf="@id/dobview_babyage"
+                app:layout_constraintTop_toBottomOf="@id/dobview_babyage" />
+
+            <EditText
+                android:id="@+id/relationview_babyage"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/layout_view_shape"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="Relation"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ageview_babyge"
+                app:layout_constraintStart_toStartOf="@+id/relation_babyage"
+                app:layout_constraintTop_toBottomOf="@+id/relation_babyage" />
+
+            <TextView
+                android:id="@+id/addMember"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_14"
+                android:text="@string/add_new_member"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="@id/relationview_babyage"
+                app:layout_constraintTop_toBottomOf="@id/relationview_babyage" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buyVaccine_lay"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="16dp"
+                android:visibility="visible"
+                android:background="@drawable/design_vaccine_chart"
+                app:layout_constraintEnd_toEndOf="@+id/addMember"
+                app:layout_constraintStart_toStartOf="@+id/relationview_babyage"
+                app:layout_constraintTop_toBottomOf="@+id/addMember">
+
+                <TextView
+                    android:id="@+id/textView22311"
+                    style="@style/normaltxt_13sp_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Buy Vaccination for your baby"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_vaccineChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addMember">
+
+                <include
+                    android:id="@+id/does"
+                    layout="@layout/vaccine_chat_details_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout26"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/common_btn_bg"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout27"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/does">
+
+                    <TextView
+                        android:id="@+id/textView223"
+                        style="@style/normaltxt_13sp_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Book A Free\nVaccination Counselling"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout27"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/design_vaccine_chart"
+                    app:layout_constraintBottom_toBottomOf="@+id/constraintLayout26"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout26"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout26">
+
+                    <TextView
+                        android:id="@+id/textView2231"
+                        style="@style/normaltxt_13sp_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Buy Vaccination"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView225"
+            style="@style/normaltxt_13sp_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Disclaimer:"
+            android:textColor="@color/newcolor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView226"
+            style="@style/normaltxt_10sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/this_is_the_proposed_vaccination_chart_based_on_the_standard_recommendations_and_assuming_that_vaccinations_are_done_on_the_recommended_dates_a_doctor_may_decide_to_modify_this_schedule_as_per_the_individual_needs_and_circumstances_of_the_patients"
+            android:textColor="@color/newcolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView225"
+            app:layout_constraintTop_toTopOf="@+id/textView225" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

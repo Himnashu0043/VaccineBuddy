@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="google_play_api">AIzaSyBzk1iAqappPnU_19zmEz4_9A7z8DrP8Yo</string>
+    <string-array name="EditProfile">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="AddressType">
+        <item>Select Address Type</item>
+        <item>Home</item>
+        <item>Office</item>
+    </string-array>
+    <string-array name="Relation">
+        <item>Select Relation</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="DeliveryType">
+        <item>Delivery</item>
+        <item>Natural Birth</item>
+        <item>Vaginal Birth</item>
+        <item>Scheduled Cesarean</item>
+        <item>Unplanned Cesarean</item>
+        <item>Scheduled Induction</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="DeliveryPeriod">
+        <item>Period</item>
+        <item>Full Time Delivery</item>
+        <item>Premature Delivery</item>
+        <!--      <item>Other</item>-->
+    </string-array>
+    <string-array name="Any">
+        <item>Any</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="enable_gps">Enable Gps</string>
+    <string name="grant_location_permission_to_use_app">Grant Location Permission To Use App</string>
+    <string name="give_youapp_access_to_location">Give Salon app permission to access  location</string>
+    <string name="app_name">Vaccine Buddy</string>
+    <string name="login">Login</string>
+    <string name="enter_email_or_phone_number">Enter Email or Phone Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_your_email_or_phone_number_you_will_receive_a_code_to_create_a_new_password">Enter your Email or Phone Number. You will receive a code to create a new password</string>
+    <string name="by_continuing_you_agree_to_terms_amp_condition_and_privacy_policy"><![CDATA[By Continuing, you agree to ]]><font color="#D41C5B">Terms &amp; Conditions</font> and<font color="#D41C58">Privacy Policy</font></string>
+    <string name="change_password">Change Password</string>
+    <string name="email">Enter Email</string>
+    <string name="dob">Date of Birth</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="referralCode">Referral Code(Optional)</string>
+    <string name="enter_your_new_password_to_reset_your_login_details">Enter your new password to Reset your login details</string>
+    <string name="new_password">New Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">REGISTER</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="sign_up_to_browse_online_medicine_near_by_location">Sign up to browse Online Vaccine near by location</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="full_name">Full Name</string>
+    <string name="check_line">By Continuing, you agree to</string>
+    <string name="check_line_sign">By Selecting this and signing up, you agree</string>
+    <string name="signup">Sign Up</string>
+    <string name="bottom_msg_in_sign_up">Already have an account?</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login_in_sign">Log In</string>
+    <string name="a_message_has_been_sent">A Message has been Sent!</string>
+    <string name="you_ll_shortly_receive_a_message_with_instructions_to_set_up_your_password">You l shortly receive a message with instructions to set up your password</string>
+    <string name="done">Done</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="verification_view">Enter the 6-digit code you received in</string>
+    <string name="not_receive_code"><font color="#666666">Didn\'t receive a code?</font><font color="#FE8900"> Resend</font></string>
+    <string name="congratulations">Congratulations</string>
+    <string name="your_password_has_been_updated_successfully">Your Password has been updated successfully!</string>
+    <string name="verification">Verification</string>
+    <string name="_6">6</string>
+    <string name="verification_view_2">Enter the 6-digit code you received in</string>
+    <string name="enter_your_new_password_to_create_your_login_credentials">Enter your New Password to Create your login credentials</string>
+    <string name="create_password">Create Password</string>
+    <string name="welcome_view">Welcome to Vaccine Buddy ! \n Your Account has been created</string>
+    <string name="schedule_your_vaccination_counselling">Schedule Your Vaccination Counselling</string>
+    <string name="select_family_member_for_which_you_are_scheduling_a_call">Select Family Member for which you are schedulling a call</string>
+    <string name="yash_verma">Yash Verma</string>
+    <string name="add_new_member">+ Add New Member</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="age">Age</string>
+    <string name="_08_06_1996">08/06/1996</string>
+    <string name="_6_week">6 Week</string>
+    <string name="relation">Relation</string>
+    <string name="son">Son</string>
+    <string name="allergies_medical_conditions"><![CDATA[Allergies & Medical Conditions]]></string>
+    <string name="lactose_intolerent">Lactose intolerent</string>
+    <string name="previous_pediatrician">Previous Pediatrician</string>
+    <string name="upload_previous_vaccination_chart">Upload Previous Vaccination Chart</string>
+    <string name="schedule_call_with_expert">Schedule call with Expert</string>
+    <string name="add_your_preferred_time">Add your preferred Time</string>
+    <string name="select_time">Select Time</string>
+    <string name="_08_30">08:30</string>
+    <string name="book_now">Book Now</string>
+    <string name="thank_you">Thank You</string>
+    <string name="congratulations_your_call_has_been_scheduled_successfully">Congratulations! Your call has been scheduled successfully</string>
+    <string name="go_to_my_counsellings">Go to My Counsellings</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="vinay_kumar">Vinay Kumar</string>
+    <string name="all_categories">All Categories</string>
+    <string name="search_category">Search Category</string>
+    <string name="women_s_health">Women Health</string>
+    <string name="kids">Kids</string>
+    <string name="schedule_counselling">Schedule Counselling</string>
+    <string name="please_fill_information_before_proceeding">Please fill Information Before Proceeding</string>
+    <string name="standard_package">Standard Package</string>
+    <string name="lorem_ipsum_dolar_sit_amet_cons">Lorem ipsum dolar sit amet cons</string>
+    <string name="_3000">₹3000</string>
+    <string name="included_vaccines_12"><font color="#333333">Included Vaccines:</font></string>
+    <string name="select_family_member">Select Family Member</string>
+    <string name="any_reaction_with_the_previous_dosage">Any Reaction with the previous dosage (If any)</string>
+    <string name="lorem_ipsum_dolar">Lorem ipsum dolar</string>
+    <string name="baby_s_birth_history">Baby\'s Birth History</string>
+    <string name="normal_delivery">Normal Delivery</string>
+    <string name="full_term_delievery">Full Term Delievery</string>
+    <string name="upload_nicu_details">Upload NICU Details</string>
+    <string name="any_medical_disorder_at_time_of_birth">Any Medical Disorder at time of birth</string>
+    <string name="upload_birth_history">Upload Birth History</string>
+    <string name="schedule_your_dose_optional">Schedule Your Dose</string>
+    <string name="address">Address</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="home_address">Home Address</string>
+    <string name="_4073_sundown_austin_texas_78749">4073 Sundown Austin, Texas, 78749</string>
+    <string name="office_address">Office Address</string>
+    <string name="_2005_capital_of_texas_austin_tx_78746">2005 Capital of Texas Austin, TX 78746</string>
+    <string name="add_new">+ Add New</string>
+    <string name="_2_dose_included">2 Dose Included</string>
+    <string name="home_vaccination">Home Vaccination</string>
+    <string name="charge_2_rs_500">Charge (2 * Rs 500)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="let_s_join_us_to_get_vaccinated">Let join us to get Vaccinated</string>
+    <string name="vaccine_buddy_is_complete_online_vaccine_amp_health_app_for_all_your_medical_needs"><![CDATA[Vaccine Buddy is Complete online vaccine & Health app for all your Medical needs.]]></string>
+    <string name="package_details">Package Details</string>
+    <string name="_4_0">4.0</string>
+    <string name="_121_reviews"><u>121 Reviews</u></string>
+    <string name="_6_vaccines_23_dosage_included"><![CDATA[6 Vaccines & 23 Dosage included]]></string>
+    <string name="description">Description</string>
+    <string name="_91">+91</string>
+    <string name="sorry">Sorry!</string>
+    <string name="you_are_not_eligible_for_this_package_please_create_your_own_custom_package">You are not eligible for this package, please create your own custom package.</string>
+    <string name="suggest_as_per_my_baby_age">Suggest as per my baby age</string>
+    <string name="_2020_lorem_ipsum_com_all_rights_reserved"> 2020 Lorem Ipsum.com. All rights reserved.</string>
+    <string name="you_are_eligible_to_schedule_6_week_dose">You are Eligible to schedule 6 Week dose</string>
+    <string name="_8_30">8:30</string>
+    <string name="itemText">Tempora ratione adipisci ut exercitationem et fugiat quis cupiditate.Dolorem eos non quis rerum omnis nam.</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="payment_Success">Payment Success</string>
+    <string name="offer_discount">Offer &amp; Discount</string>
+    <string name="you_got_a_promo_code">You got a promo code</string>
+    <string name="order_delivered">Order delivered</string>
+    <string name="notifications">Notifications</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="monday">Monday</string>
+    <string name="september_20">september 20</string>
+    <string name="hi_sunanda">Hi, Sunanda</string>
+    <string name="search_your_vaccine_here">Search your vaccination here</string>
+    <string name="vaccination_schedule_chart">Vaccination Schedule Chart</string>
+    <string name="age_of_baby">Age of baby</string>
+    <string name="inclusions">Inclusions</string>
+    <string name="due_date">Due Date</string>
+    <string name="at_birth">At Birth</string>
+    <string name="hap_b_bcg_opv">Hap B, BCG OPV</string>
+    <string name="tableview">Lorem ipsu m dolor sit amet, consectetur piscing<font color="#FE8900">Read more</font></string>
+    <string name="_04_08_22">04/08/22</string>
+    <string name="book_a_free_vaccination_counselling">Book A Free Vaccination Counselling</string>
+    <string name="buy_vaccination_for_your_baby">Buy Vaccination for your baby</string>
+    <string name="create_package">+ Create Package</string>
+    <string name="add">Add</string>
+    <string name="covishield">Covid Shield</string>
+    <string name="packages">Packages</string>
+    <string name="vaccines">Vaccines</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="cart">Cart</string>
+    <string name="_4_items">4 items</string>
+    <string name="in_your_cart">in your cart</string>
+    <string name="rate_order">Rate Order</string>
+    <string name="rating">Rating</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="i_love_vaccine_buddy">I love Vaccine Buddy</string>
+    <string name="submit">Submit</string>
+    <string name="profiles">Profiles</string>
+    <string name="sjhw6512_gmail_com">sjhw6512@gmail.com</string>
+    <string name="shubham_jain">Shubham Jain</string>
+    <string name="my_profile">My Profile</string>
+    <string name="family_members">Family Members</string>
+    <string name="my_address">My Address</string>
+    <string name="vaccination_records">Vaccination Records</string>
+    <string name="counselling_call">Counselling Call</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="add_family_member">Add Family Member</string>
+    <string name="vaccine_buddy_pvt_ltd">Vaccine Buddy</string>
+    <string name="company_number">Company Number</string>
+    <string name="create_your_vaccination_schedulend">Create Your \n Vaccination Schedulend</string>
+    <string name="vcb204616">VCB204616</string>
+    <string name="my_referral">My Referral</string>
+    <string name="allergies_amp_medical_conditions"><![CDATA[Allergies & Medical Conditions]]></string>
+    <string name="year">23 Years</string>
+    <string name="male">Male</string>
+    <string name="dob2">04-june-1998</string>
+    <string name="jjjj">91-7656547646</string>
+    <string name="search_sub_category">Search Sub Category</string>
+    <string name="book_a_free_vaccination_counselling2">Book A Free \n Vaccination \n Counselling</string>
+    <string name="testimonials">Testimonials</string>
+    <string name="my_order">My Order</string>
+    <string name="create_your">Create your</string>
+    <string name="vaccination_schedule">Vaccination Schedule</string>
+    <string name="package_name_economy">Package Name (Economy)</string>
+    <string name="search_subcategory">Search SubCategory</string>
+    <string name="schedule_for_9_weeks_dosage"><u>Schedule For 9-Weeks Dosage</u></string>
+    <string name="schedule_history"><u>Schedule History</u></string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_piscing_read_more">Lorem ipsum dolor sit amet, consectetur piscing <font color="#FE8900">Read more</font></string>
+    <string name="this_is_the_proposed_vaccination_chart_based_on_the_standard_recommendations_and_assuming_that_vaccinations_are_done_on_the_recommended_dates_a_doctor_may_decide_to_modify_this_schedule_as_per_the_individual_needs_and_circumstances_of_the_patients">This is the proposed vaccination chart based on the standard recommendations and assuming that vaccinations are done on the recommended dates. A doctor may decide to modify this schedule as per the individual needs and circumstances of the patients.</string>
+    <string name="vaccine_details">Vaccination Detail</string>
+    <string name="payment_key">rzp_test_wk2k8xq476rOgL</string>
+    <!--    <string name="payment_key">rzp_live_w7tz16CALNGykp</string>-->
+
+    <string name="to_our_terms_amp_policy">to our</string>
+    <string name="term"><font color="#D41C5B">Terms</font></string>
+    <string name="policy">&amp; <font color="#D41C5B">Policy.</font></string>
+    <string name="allergies_or_medical_condition">Allergies or medical Condition</string>
+    <string name="enter_pincode">Enter Pincode</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="total_package">Total Package</string>
+    <string name="discount">Discount</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="total_vaccine">Total Vaccine</string>
+    <string name="total">TOTAL</string>
+    <string name="enter_employee_id">Enter Employee Id</string>
+    <string name="default_notification_channel_id">trwdyufywefdyxcfgxct</string>
+    <string name="title_activity_new_otp">NewOtpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+
+</resources>

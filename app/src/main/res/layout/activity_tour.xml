@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.Walkthrough.TourActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0"
+        app:tabBackground="@drawable/drawable_tab_indicator_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <TextView
+        android:id="@+id/textView114"
+        style="@style/normaltxt_20sp_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        android:text="Let's Join Us to get Vaccinated"
+        android:textColor="@color/newcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+    <TextView
+        android:id="@+id/textView115"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="Vaccine Buddy is complete online Vaccine &amp; Health app for all your medical needs."
+        android:textColor="#333333"
+        app:layout_constraintEnd_toEndOf="@+id/textView114"
+        app:layout_constraintStart_toStartOf="@+id/textView114"
+        app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+    <TextView
+        android:id="@+id/tvNext"
+        style="@style/normaltxt_16sp_Medium"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_46"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/common_btn_bg"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView115"
+        app:layout_constraintStart_toStartOf="@+id/textView115"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        style="@style/normaltxt_16sp_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Skip"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/orange"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/tvNext"
+        app:layout_constraintStart_toStartOf="@+id/tvNext"
+        app:layout_constraintTop_toBottomOf="@+id/tvNext" />
+</androidx.constraintlayout.widget.ConstraintLayout>

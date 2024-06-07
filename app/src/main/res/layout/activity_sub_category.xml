@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.activity.SubCategory.SubCategoryActivity">
+    <include
+        android:id="@+id/allCategoriesToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/seach"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@drawable/search_ed"
+        android:drawableEnd="@drawable/ic_search_img"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/search_category"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_30"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        style="@style/normaltxt_14sp_Regular"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allCategoriesToolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyAllCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seach"
+        app:layout_constraintTop_toBottomOf="@+id/seach" />
+    <!--    <GridView-->
+    <!--        android:id="@+id/gridview"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="557dp"-->
+    <!--        android:layout_marginTop="@dimen/dp_16"-->
+    <!--        android:columnWidth="@dimen/dp_90"-->
+    <!--        android:numColumns="3"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/seach"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

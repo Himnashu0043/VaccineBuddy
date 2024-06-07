@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.fragment.BabyFragment.BabyVaccineFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/drawable_gradient_bg"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView166"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Choose Vaccine as Per baby's age-1"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvclickHere"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="@dimen/dp_73"
+            android:layout_height="23dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/design_vaccine_chart"
+            android:gravity="center"
+            android:text="Click Here"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/seach"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search_ed"
+        android:drawableEnd="@drawable/ic_search_img"
+        android:drawablePadding="@dimen/dp_16"
+        android:fontFamily="@font/gilroy_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/search_subcategory"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:singleLine="true"
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout17"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout17"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout17" />
+
+    <TextView
+        android:id="@+id/textView53"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/newblack"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/seach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seach" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seach" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

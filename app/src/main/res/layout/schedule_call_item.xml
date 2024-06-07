@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvName_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:textColor="@color/newcolor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView110"
+                app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Age "
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvName_callScheduleItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvName_callScheduleItem" />
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Gender"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView95"
+                app:layout_constraintEnd_toStartOf="@+id/textView97"
+                app:layout_constraintStart_toEndOf="@+id/textView95"
+                app:layout_constraintTop_toTopOf="@+id/textView95" />
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="DOB"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/tvstatus_callScheduleItem"
+                app:layout_constraintTop_toTopOf="@+id/textView96" />
+
+            <TextView
+                android:id="@+id/textView110"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Schedule For Family Member "
+                android:textColor="@color/newcolor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView106"
+                app:layout_constraintTop_toBottomOf="@+id/tvTime_Day_callScheduleItem" />
+
+            <TextView
+                android:id="@+id/textView106"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Schedule call on "
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTime_Day_callScheduleItem"
+                style="@style/normaltxt_10sp_semiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/textView106"
+                app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+            <TextView
+                android:id="@+id/tvstatus_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Pending"
+                android:textColor="@color/orange"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView106"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView106" />
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Status: "
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvstatus_callScheduleItem"
+                app:layout_constraintEnd_toStartOf="@+id/tvstatus_callScheduleItem"
+                app:layout_constraintTop_toTopOf="@+id/tvstatus_callScheduleItem" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:textColor="@color/black"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="@+id/textView95"
+    app:layout_constraintTop_toBottomOf="@+id/textView95"
+    android:id="@+id/tvage"/>
+<!--            <TextView-->
+            <!--                android:id="@+id/tvAge_callScheduleItem"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="6dp"-->
+            <!--                android:textColor="@color/newcolor"-->
+            <!--                android:textSize="12sp"-->
+            <!--                android:text="hhhh"-->
+            <!--                android:visibility="gone"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textView95"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView95" />-->
+
+            <TextView
+                android:id="@+id/tvGender_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/newcolor"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView96"
+                app:layout_constraintHorizontal_bias="0.237"
+                app:layout_constraintStart_toStartOf="@+id/textView96"
+                app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+            <TextView
+                android:id="@+id/tvDoB_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView97"
+                app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Relation"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvage"
+                app:layout_constraintTop_toBottomOf="@+id/tvage" />
+
+            <TextView
+                android:id="@+id/tvRelation_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                android:padding="@dimen/dp_4"
+                app:layout_constraintStart_toStartOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/textView101" />
+
+            <TextView
+                android:id="@+id/textView108"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/pink_gradient_bg"
+                android:drawableEnd="@drawable/ic_pdf_svgrepo_com"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_17"
+                android:paddingEnd="@dimen/dp_17"
+                android:text="Uploded Vaccination Chart"
+                android:textColor="@color/pink"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/textView103"
+                app:layout_constraintStart_toStartOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelation_callScheduleItem" />
+
+
+            <TextView
+                android:id="@+id/textView116"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Previous Pediatrician"
+                android:visibility="visible"
+                android:textColor="@color/newcolor"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView101"
+                app:layout_constraintTop_toBottomOf="@+id/textView108" />
+
+            <TextView
+                android:id="@+id/tvPrevoius_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/textView103"
+                app:layout_constraintStart_toStartOf="@+id/textView116"
+                app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                android:text="Any Reaction with previous Dosage"
+                app:layout_constraintStart_toStartOf="@+id/tvPrevoius_callScheduleItem"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrevoius_callScheduleItem" />
+
+            <TextView
+                android:id="@+id/tvAny_Reaction"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tvPrevoius_callScheduleItem"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/allergies_amp_medical_conditions"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView97"
+                app:layout_constraintTop_toBottomOf="@+id/tvDoB_callScheduleItem" />
+
+            <TextView
+                android:id="@+id/tvMedical_callScheduleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView103"
+                app:layout_constraintTop_toBottomOf="@+id/textView103" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAny_Reaction">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Baby's Birth History"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    style="@style/normaltxt_14sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="Delivery"
+                    app:layout_constraintStart_toStartOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <TextView
+                    android:id="@+id/tvDelivery"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toStartOf="@+id/tvAnySeizures"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    style="@style/normaltxt_14sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Any Seizures at Birth"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView32"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+                <TextView
+                    android:id="@+id/tvAnySeizures"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDelivery"
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintTop_toTopOf="@+id/tvDelivery" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/upload_chat_btn2"
+                    style="@style/normaltxt_12sp_Medium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/blue_gradient_bg"
+                    android:drawableEnd="@drawable/ic_blue_pdf"
+                    android:elevation="@dimen/dp_14"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="16dp"
+                    android:text="NICU Records"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darknavyblue2"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDelivery" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/upload_chat_btn3"
+                    style="@style/normaltxt_12sp_Medium"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yellow_gradient_bg"
+                    android:drawableEnd="@drawable/ic_yellow_pdf"
+                    android:elevation="@dimen/dp_14"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="16dp"
+                    android:text="Birth History:"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orange"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@id/upload_chat_btn2" />
+
+                <TextView
+                    android:id="@+id/textView206"
+                    style="@style/normaltxt_12sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Any Medical Disorder at time of Birth"
+                    app:layout_constraintStart_toStartOf="@+id/textView32"
+                    app:layout_constraintTop_toBottomOf="@+id/upload_chat_btn3" />
+
+                <TextView
+                    android:id="@+id/tvmedicalDisorder"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/newblack"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintStart_toStartOf="@+id/textView206"
+                    app:layout_constraintTop_toBottomOf="@+id/textView206" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView111"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Call Schedule With Expert"
+                android:textColor="@color/newcolor"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout11" />
+
+            <TextView
+                android:id="@+id/tvCallTime_ScheduleDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:textColor="@color/newcolor"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView111"
+                app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

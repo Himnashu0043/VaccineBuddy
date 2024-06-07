@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvVaccine_Name"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView82"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cost of Vaccines"
+            app:layout_constraintStart_toStartOf="@+id/tvVaccine_Name"
+            app:layout_constraintTop_toBottomOf="@+id/tvVaccine_Name" />
+
+        <TextView
+            android:id="@+id/tvCostVaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            style="@style/normaltxt_12sp_Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/textView82"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
+            app:layout_constraintTop_toTopOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/tvCostVaccinePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="right"
+            style="@style/normaltxt_14sp_Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/textView82"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/textView121"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Home Vaccination Free"
+            app:layout_constraintStart_toStartOf="@+id/textView82"
+            app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+        <TextView
+            android:id="@+id/tvHomeVaccinationFree_vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            style="@style/normaltxt_12sp_Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/textView121"
+            app:layout_constraintStart_toEndOf="@+id/textView121"
+            app:layout_constraintTop_toTopOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/tvHomeVaccinationPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/normaltxt_14sp_Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/textView121"
+            app:layout_constraintEnd_toEndOf="@+id/tvCostVaccinePrice"
+            app:layout_constraintTop_toTopOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/textView1211"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Discount price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView121"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/tvDiscountPrice"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView1211"
+            app:layout_constraintEnd_toEndOf="@+id/tvHomeVaccinationPrice"
+            app:layout_constraintTop_toTopOf="@+id/textView1211" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.view.fragment.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_300"
+        android:scaleType="fitXY"
+        android:elevation="-1dp"
+        android:src="@drawable/home_banner_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@drawable/home_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <TextView
+        android:id="@+id/textView40"
+        style="@style/normaltxt_20spMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/ic_iconn"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+        app:layout_constraintEnd_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView26"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginEnd="24dp"
+        android:visibility="invisible"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dummy_home_img"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        android:src="@drawable/rounded_app_icon"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/tvVaccineLable"
+        style="@style/normaltxt_14sp_Medium"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="India's first vaccination brand powered by a doctor's vision and experience"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <EditText
+        android:id="@+id/search_edit"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/search_home_edit"
+        android:drawableEnd="@drawable/ic_searching_home"
+        android:gravity="center_vertical"
+        android:hint="@string/search_your_vaccine_here"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_20"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVaccineLable" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcySearch"
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:background="@drawable/layout_view_shape"
+        app:layout_constraintEnd_toEndOf="@+id/search_edit"
+        app:layout_constraintStart_toStartOf="@+id/search_edit"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit" />
+
+    <!--<androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:foregroundGravity="bottom"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pager1"
+        app:layout_constraintEnd_toEndOf="@+id/view_pager1"
+        app:layout_constraintStart_toStartOf="@+id/view_pager1"
+        app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="0dp"
+        app:tabPaddingEnd="10dp"
+        app:tabPaddingStart="10dp" />-->
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+               <com.google.android.material.tabs.TabLayout
+                   android:id="@+id/tabLayout1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="@dimen/dp_30"
+                   android:foregroundGravity="bottom"
+                   android:background="@android:color/transparent"
+                   app:layout_constraintBottom_toBottomOf="@+id/view_pager1"
+                   app:layout_constraintEnd_toEndOf="@+id/view_pager1"
+                   app:layout_constraintStart_toStartOf="@+id/view_pager1"
+                   app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+                   app:tabGravity="fill"
+                   app:tabIndicatorHeight="0dp"
+                   app:tabMaxWidth="0dp"
+                   app:tabPaddingEnd="10dp"
+                   app:tabPaddingStart="10dp" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView96"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/dp_16"-->
+            <!--                android:fontFamily="@font/gilroy_bold"-->
+            <!--                android:text="Book Free"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="@dimen/sp_24"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView97"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:text="On vaccine"-->
+            <!--                android:textSize="@dimen/sp_16"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:fontFamily="@font/gilroy_regular"-->
+            <!--                app:layout_constraintEnd_toEndOf="@+id/textView96"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textView96"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView96" />-->
+
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="35dp"-->
+            <!--                android:layout_marginTop="@dimen/dp_8"-->
+            <!--                android:background="@drawable/button_shape_slide"-->
+            <!--                android:backgroundTint="@null"-->
+            <!--                android:text="View Details"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textView97"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/textView97"-->
+            <!--                tools:ignore="TouchTargetSizeCheck">-->
+            <!--            </androidx.appcompat.widget.AppCompatButton>-->
+
+            <TextView
+                android:id="@+id/textview100"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Explore Our Categories"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout1" />
+
+            <TextView
+                android:id="@+id/view_btn"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/view_all_bg"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_5"
+                android:text="View All"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/textview100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textview100" />
+
+            <!--            <com.mlsdev.animatedrv.AnimatedRecyclerView-->
+            <!--                android:id="@+id/recyclerview_homeFrag"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="12dp"-->
+            <!--                android:nestedScrollingEnabled="false"-->
+            <!--                app:animationDuration="1000"-->
+            <!--                app:layoutAnimation="@anim/layout_animation_from_bottom"-->
+            <!--                app:layoutManagerOrientation="horizontal"-->
+            <!--                app:layoutManagerReverse="false"-->
+            <!--                app:layoutManagerType="linear"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/textview100"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textview100" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_homeFrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textview100"
+                app:layout_constraintTop_toBottomOf="@id/textview100" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_5"
+                app:layout_constraintEnd_toEndOf="@+id/view_btn"
+                app:layout_constraintStart_toStartOf="@+id/textview100"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerview_homeFrag">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageview101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/create_vaccination1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/create_vaccination"
+                        style="@style/normaltxt_16sp_Semibold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:text="Recommended"
+                        android:textColor="@color/newcolor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/create_vaccination1"
+                        style="@style/normaltxt_16sp_Semibold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        android:text="@string/vaccination_schedule"
+                        android:textColor="@color/newcolor"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@+id/create_vaccination"
+                        app:layout_constraintTop_toBottomOf="@+id/create_vaccination" />
+
+                    <TextView
+                        android:id="@+id/button_own"
+                        style="@style/normaltxt_12sp_Medium"
+                        android:layout_width="@dimen/dp_117"
+                        android:layout_height="27dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/button_shape_slide"
+                        android:gravity="center"
+                        android:text="Create Your Own"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageview101"
+                        app:layout_constraintStart_toStartOf="@+id/create_vaccination" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView106"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="Explore Our Packages"
+                android:textColor="@color/newcolor"
+                app:layout_constraintStart_toStartOf="@+id/create"
+                app:layout_constraintTop_toBottomOf="@+id/create" />
+            <!--            <com.mlsdev.animatedrv.AnimatedRecyclerView-->
+            <!--                android:id="@+id/rcy_packages"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="12dp"-->
+            <!--                android:nestedScrollingEnabled="false"-->
+            <!--                app:animationDuration="1000"-->
+            <!--                app:layoutAnimation="@anim/layout_animation_from_bottom"-->
+            <!--                app:layoutManagerOrientation="horizontal"-->
+            <!--                app:layoutManagerReverse="false"-->
+            <!--                app:layoutManagerType="linear"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/create"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/textView106" />-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcy_packages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/create"
+                app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/book"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_8"
+                app:layout_constraintEnd_toEndOf="@+id/view_btn1"
+                app:layout_constraintStart_toStartOf="@+id/textView106"
+                app:layout_constraintTop_toBottomOf="@+id/rcy_packages">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageview1011"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bannr"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView68"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/book"
+                        app:layout_constraintStart_toStartOf="@+id/imageview1011"
+                        app:layout_constraintTop_toTopOf="@+id/imageview1011" />
+
+                    <TextView
+                        android:id="@+id/tvclick"
+                        style="@style/normaltxt_14sp_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="27dp"
+                        android:layout_marginBottom="29dp"
+                        android:background="@drawable/layout_view_shape"
+                        android:gravity="center"
+                        android:text="Click Here"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageview1011"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView68"
+                        app:layout_constraintStart_toStartOf="@+id/imageView68" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView1061"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="Explore Vaccination"
+                android:textColor="@color/newcolor"
+                app:layout_constraintStart_toStartOf="@+id/book"
+                app:layout_constraintTop_toBottomOf="@+id/book" />
+
+            <TextView
+                android:id="@+id/view_btn11"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/view_all_bg"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_5"
+                android:text="View All"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/textView1061"
+                app:layout_constraintEnd_toEndOf="@+id/book"
+                app:layout_constraintTop_toTopOf="@+id/textView1061" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcy_vaccine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView1061"
+                app:layout_constraintTop_toBottomOf="@+id/textView1061" />
+
+            <TextView
+                android:id="@+id/textView10611"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:text="Testimonials"
+                android:textColor="@color/newcolor"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/rcy_vaccine"
+                app:layout_constraintTop_toBottomOf="@+id/rcy_vaccine" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyTest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/rcy_vaccine"
+                app:layout_constraintTop_toBottomOf="@+id/textView10611" />
+
+            <TextView
+                android:id="@+id/view_btn1"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_all_bg"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_5"
+                android:text="View All"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/textView106"
+                app:layout_constraintEnd_toEndOf="@+id/view_btn"
+                app:layout_constraintTop_toTopOf="@+id/textView106" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/menuhome"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ivwhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_50"
+        app:cardElevation="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/whatsapp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

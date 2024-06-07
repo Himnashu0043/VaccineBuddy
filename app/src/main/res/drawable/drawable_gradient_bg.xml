@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/listview_background_shape">
+    <!--    <padding android:left="2dp"-->
+    <!--        android:right="2dp"-->
+    <!--        android:top="2dp"/>-->
+    <corners android:radius="@dimen/dp_10"/>
+    <gradient
+        android:type="linear"
+        android:angle="0"
+        android:startColor="@color/white"
+        android:endColor="#41FF9800" />
+    <stroke android:color="@color/orange" android:width="@dimen/dp_0.5"/>
+</shape>

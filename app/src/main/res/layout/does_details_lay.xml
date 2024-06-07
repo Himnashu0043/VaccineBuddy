@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_doesLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout25"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView198"
+                style="@style/normaltxt_10sp_semiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Age of Baby"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/divider4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView199"
+                app:layout_constraintStart_toEndOf="@+id/textView198"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView199"
+                style="@style/normaltxt_10sp_semiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Inclusions"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/divider5"
+                app:layout_constraintStart_toEndOf="@+id/divider4"
+                app:layout_constraintTop_toTopOf="@+id/textView198" />
+
+    &lt;!&ndash;        <View&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/divider5"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="1dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="56dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_marginStart="8dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_marginEnd="8dp"&ndash;&gt;
+    &lt;!&ndash;            android:visibility="gone"&ndash;&gt;
+    &lt;!&ndash;            android:background="?android:attr/listDivider"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="@+id/divider4"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/textView200"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/textView199"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/divider4" />&ndash;&gt;
+
+    &lt;!&ndash;        <TextView&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/textView200"       &ndash;&gt;
+    &lt;!&ndash;            style="@style/normaltxt_10sp_semiBold"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;
+    &lt;!&ndash;            android:text="Brand"&ndash;&gt;
+    &lt;!&ndash;            android:visibility="gone"&ndash;&gt;
+    &lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/divider6"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/divider5"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/textView199" />&ndash;&gt;
+
+    &lt;!&ndash;        <View&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/divider6"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="1dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="56dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_marginStart="8dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_marginEnd="8dp"&ndash;&gt;
+    &lt;!&ndash;            android:visibility="gone"&ndash;&gt;
+    &lt;!&ndash;            android:background="?android:attr/listDivider"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="@+id/divider5"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/textView201"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/textView200"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/divider5"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintVertical_bias="1.0" />&ndash;&gt;
+
+    &lt;!&ndash;        <TextView&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/textView201"&ndash;&gt;
+    &lt;!&ndash;            style="@style/normaltxt_10sp_semiBold"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;
+    &lt;!&ndash;            android:text="Due Date"&ndash;&gt;
+    &lt;!&ndash;            android:visibility="gone"&ndash;&gt;
+    &lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/divider7"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/divider6"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/textView200" />&ndash;&gt;
+
+    &lt;!&ndash;        <TextView&ndash;&gt;
+    &lt;!&ndash;            android:id="@+id/textView2011"&ndash;&gt;
+    &lt;!&ndash;            style="@style/normaltxt_10sp_semiBold"&ndash;&gt;
+    &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;
+    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;            android:gravity="center_horizontal"&ndash;&gt;
+    &lt;!&ndash;            android:text="Batch No."&ndash;&gt;
+    &lt;!&ndash;            android:visibility="gone"&ndash;&gt;
+    &lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintEnd_toStartOf="@+id/divider8"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintStart_toEndOf="@+id/divider7"&ndash;&gt;
+    &lt;!&ndash;            app:layout_constraintTop_toTopOf="@+id/textView201" />&ndash;&gt;
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="1dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/divider6"
+                app:layout_constraintEnd_toStartOf="@+id/textView2011"
+                app:layout_constraintStart_toEndOf="@+id/textView201"
+                app:layout_constraintTop_toTopOf="@+id/divider6" />
+
+            <TextView
+                android:id="@+id/textView202"
+                style="@style/normaltxt_10sp_semiBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_horizontal"
+                android:text="Status"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider8"
+                app:layout_constraintTop_toTopOf="@+id/textView201" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/divider4"
+                app:layout_constraintEnd_toStartOf="@+id/textView202"
+                app:layout_constraintStart_toEndOf="@+id/textView2011"
+                app:layout_constraintTop_toTopOf="@+id/divider4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout25"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAgeOfBirth"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Age"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvInsuions"
+            app:layout_constraintStart_toEndOf="@+id/tvAgeOfBirth"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInsuions"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Inclusions"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAgeOfBirth"
+            app:layout_constraintEnd_toStartOf="@+id/divider8"
+            app:layout_constraintStart_toEndOf="@+id/divider4"
+            app:layout_constraintTop_toTopOf="@+id/tvAgeOfBirth" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@+id/divider4"
+            app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+            app:layout_constraintStart_toEndOf="@+id/tvInsuions"
+            app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/normaltxt_12sp_Medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInsuions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider8"
+            app:layout_constraintTop_toTopOf="@+id/tvInsuions" />
+
+
+        <!--
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider4"
+                    app:layout_constraintEnd_toStartOf="@+id/textView200"
+                    app:layout_constraintStart_toEndOf="@+id/tvInsuions"
+                    app:layout_constraintTop_toTopOf="@+id/divider4" />
+
+                <TextView
+                    android:id="@+id/textView200"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="ABC, ABC, ABC"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider6"
+                    app:layout_constraintStart_toEndOf="@+id/divider5"
+                    app:layout_constraintTop_toTopOf="@+id/tvInsuions" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider5"
+                    app:layout_constraintEnd_toStartOf="@+id/textView201"
+                    app:layout_constraintStart_toEndOf="@+id/textView200"
+                    app:layout_constraintTop_toTopOf="@+id/divider5"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView201"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="03 July '22"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider7"
+                    app:layout_constraintStart_toEndOf="@+id/divider6"
+                    app:layout_constraintTop_toTopOf="@+id/textView200" />
+
+                <TextView
+                    android:id="@+id/textView2011"
+                    style="@style/normaltxt_10sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="45343564"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toEndOf="@+id/divider7"
+                    app:layout_constraintTop_toTopOf="@+id/textView201" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintBottom_toBottomOf="@+id/divider6"
+                    app:layout_constraintEnd_toStartOf="@+id/textView2011"
+                    app:layout_constraintStart_toEndOf="@+id/textView201"
+                    app:layout_constraintTop_toTopOf="@+id/divider6" />
+        -->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView40"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:layout_marginBottom="4dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/tvStatus"-->
+        <!--            app:layout_constraintHorizontal_bias="0.468"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/tvStatus"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/tvStatus"-->
+        <!--            app:srcCompat="@drawable/ic_group_73378" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyvaccinedose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

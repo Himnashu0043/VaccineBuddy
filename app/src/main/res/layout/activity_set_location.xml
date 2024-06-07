@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.activity.Location.SetLocationActivity">
+
+    <include
+        android:id="@+id/setlocation_toolbar"
+        layout="@layout/common_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout31"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittextshape_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setlocation_toolbar">
+
+        <EditText
+            android:id="@+id/placeTextview"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edittextshape_profile"
+            android:drawableLeft="@drawable/ic_search_img"
+            android:drawablePadding="16dp"
+            android:hint="Search a new address"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16"
+            android:singleLine="true"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/dp_16"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/getCurrentLocation"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout31"
+        app:layout_constraintTop_toTopOf="@+id/getCurrentLocation"
+        app:srcCompat="@drawable/location" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/getCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout31">
+
+        <TextView
+            android:id="@+id/textView59"
+            style="@style/normaltxt_12sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:textColor="#F30404"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView113"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Using GPS"
+            android:textColor="#F30404"
+            app:layout_constraintStart_toStartOf="@+id/textView59"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
